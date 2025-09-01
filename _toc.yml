@@ -1,0 +1,36 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: concepts
+  sections:
+  - file: isostasy
+    sections:
+    - file: exercise-isostasy
+  - file: thinsheet
+    sections:
+    - file: stokes
+    - file: approx
+  - file: spl
+    sections:
+    - file: spl-details
+    - file: spl-solution
+  - file: glacial
+    sections:
+    - file: glacial-erosion
+    - file: glacial-constraints
+    - file: glacial-models
+  - file: dimension
+    sections:
+    - file: diffusion-advection
+    - file: solution
+- file: hypothesis1
+- file: hypothesis2
+- file: hypothesis3
+- file: hypothesis4
+- file: debate
+- file: reading
+- file: glossary
+- file: references

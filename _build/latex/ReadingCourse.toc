@@ -1,0 +1,7 @@
+\selectlanguage *[]{english}
+\contentsline {chapter}{\numberline {1}Some basic concepts}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Principle of isostasy}{5}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}A simple exercise on isostasy}{6}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}Thin sheet model}{8}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Stokes flow}{8}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Thin sheet approximation}{9}{subsection.1.2.2}%

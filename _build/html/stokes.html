@@ -1,0 +1,528 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Stokes flow &#8212; Reading course</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.4cbf315f70debaebd550c87a6162cf0f.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'stokes';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Thin sheet approximation" href="approx.html" />
+    <link rel="prev" title="Thin sheet model" href="thinsheet.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/Logo2.png" class="logo__image only-light" alt="Reading course - Home"/>
+    <script>document.write(`<img src="_static/Logo2.png" class="logo__image only-dark" alt="Reading course - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    What controls the height of mountain belts on Earth?
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="concepts.html">Some basic concepts</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="isostasy.html">Principle of isostasy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="exercise-isostasy.html">A simple exercise on isostasy</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="thinsheet.html">Thin sheet model</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Stokes flow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="approx.html">Thin sheet approximation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="spl.html">Stream Power Law</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="spl-details.html">SPL in details</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spl-solution.html">Steady-state profile</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="glacial.html">Glacial erosion</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="glacial-erosion.html">Glacial erosion law</a></li>
+<li class="toctree-l3"><a class="reference internal" href="glacial-constraints.html">Constraints on erosion law</a></li>
+<li class="toctree-l3"><a class="reference internal" href="glacial-models.html">Ice models</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="dimension.html">Dimensionless numbers</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="diffusion-advection.html">Diffusion-advection equation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="solution.html">Steady-state solution</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="hypothesis1.html">Hypothesis 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hypothesis2.html">Hypothesis 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hypothesis3.html">Hypothesis 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hypothesis4.html">Hypothesis 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="debate.html">Debate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reading.html">Additional reading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/stokes.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Stokes flow</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="stokes-flow">
+<span id="stokes-section"></span><h1>Stokes flow<a class="headerlink" href="#stokes-flow" title="Permalink to this heading">#</a></h1>
+<p>Stokes equation is a simplified form of Navier-Stokes equation that assumes that one can neglect inertial forces (and thus turbulence). It takes the following form:</p>
+<div class="math notranslate nohighlight" id="equation-stokes-force">
+<span class="eqno">(1)<a class="headerlink" href="#equation-stokes-force" title="Permalink to this equation">#</a></span>\[\frac{\partial\tau_{ij}}{\partial x_j}=\frac{\partial p}{\partial x_i}-\rho gz_i\]</div>
+<p>where <span class="math notranslate nohighlight">\(\tau_{ij}\)</span> are the compnents of the stress tensor, <span class="math notranslate nohighlight">\(p\)</span> the pressure, <span class="math notranslate nohighlight">\(\rho\)</span> the density, <span class="math notranslate nohighlight">\(g\)</span> the gravitational acceleration and <span class="math notranslate nohighlight">\(z_i\)</span> the components of a vector pointing in the direction of <span class="math notranslate nohighlight">\(g\)</span>. <span class="math notranslate nohighlight">\(x_i\)</span> represents the spatial coordinates.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A Stoke fluid is, by definition, devoid of inertia which implies that if the driving force stops, the fluid motion stops instantaneously. Honey behaves like a Stoke fluid: if you stir a honey jar with a spoon, once you remove the spoon, the honey stops moving instantly. This behaviour is also observed in the Earth on geological time scales: it explains why hot spot chains (like the <a class="reference external" href="https://www.usgs.gov/media/images/hawaiian-emperor-seamount-chain">Hawaiian-Emperor seamont chain</a>) display very abrupt strike changes that correspond to “instantaneous” changes in plate velocities.</p>
+</div>
+<p>Equation <a class="reference internal" href="#equation-stokes-force">(1)</a> represents the balance between three forces that must exist at any point within the fluid:</p>
+<ol class="arabic simple">
+<li><p>the first term (on the left-hand side of the equation) represents the viscous forces</p></li>
+<li><p>the second term (on the right-hand side of the equation) represents the forces arising from pressure gradient inside the fluid;</p></li>
+<li><p>the third term (last on the right) represents the gravitational forces.</p></li>
+</ol>
+<p>Note that this equation does not contain any time dependency. In other words, the flow is static unless the boundary conditions or one of the parameters (the distribution of density for example) varies with time.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Stokes flow have interesting properties. One of them is that they are perfectly reversible. This can be appreciated on the <a class="reference external" href="https://www.youtube.com/watch?v=rA6T83FKuE8">following video</a></p>
+</div>
+<p>If we wish to use Stokes equation to represent the motion and deformation of plates and flow in the underlying mantle, we must also assume that the flow is incompressible. Mathematically, this is equivalent to assuming that, at every point within the fluid, the divergence of the velocity vector is nil. In other words:</p>
+<div class="math notranslate nohighlight" id="equation-incompressibility">
+<span class="eqno">(2)<a class="headerlink" href="#equation-incompressibility" title="Permalink to this equation">#</a></span>\[\frac{\partial u_i}{\partial x_i}=0\]</div>
+<p>where <span class="math notranslate nohighlight">\(u_i\)</span> are the components of the velocity vector. Note that in this equation as in equation <a class="reference internal" href="#equation-stokes-force">(1)</a>, we have used <a class="reference external" href="https://en.wikipedia.org/wiki/Einstein_notation">Einstein’s notation</a> which assumes that if an index appears more than once in a single term and is not otherwise defined, it implies summation.</p>
+<p>We see that the first equation <a class="reference internal" href="#equation-stokes-force">(1)</a> refers to stresses (or forces), whereas the second <a class="reference internal" href="#equation-incompressibility">(2)</a> referes to velocities. To combine the two equations, one needs to introduce a rheological law or <a class="reference internal" href="glossary.html#term-Rheology"><span class="xref std std-term">rheology</span></a>, i.e., a rule that defines the relationship between deformation (velocity) and stress (force). Here we assume a non-linear viscous behaviour of the form:</p>
+<div class="math notranslate nohighlight" id="equation-rheology">
+<span class="eqno">(3)<a class="headerlink" href="#equation-rheology" title="Permalink to this equation">#</a></span>\[\dot\epsilon_{ij} = B^{-n}T^{n-1}\sigma_{ij}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\dot\epsilon_{ij}\)</span> is the strain rate tensor, defined from the spatial derivatives of the velocity vector:</p>
+<div class="math notranslate nohighlight" id="equation-strain-rate">
+<span class="eqno">(4)<a class="headerlink" href="#equation-strain-rate" title="Permalink to this equation">#</a></span>\[\dot\epsilon_{ij}=\frac{1}{2}\Bigl(\frac{\partial u_i}{\partial x_j}+\frac{\partial u_j}{\partial x_i}\Bigr)\]</div>
+<p><span class="math notranslate nohighlight">\(B\)</span> is a constant and <span class="math notranslate nohighlight">\(n\)</span> an exponent that represents the non-linearity of the rheological law (the rheology is linear is <span class="math notranslate nohighlight">\(n=1\)</span>). Using values of <span class="math notranslate nohighlight">\(n&gt;1\)</span> implies that the material is strain softening, i.e., its viscosity drops as the strain rate increases. <span class="math notranslate nohighlight">\(T\)</span> is the second <a class="reference internal" href="glossary.html#term-Invariant"><span class="xref std std-term">invariant</span></a> of the deviatoric part of the stress tensor. The deviatoric part means that the pressure has been substracted from the diagonal elements of the stress tensor. The second invariant is a special combination of the tensor components that remains invariant in any system of reference (the pressure is the first invariant of the stress tensor). More information on the invariants of a tensor can be found <a class="reference external" href="https://en.wikipedia.org/wiki/Invariants_of_tensors">here</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that the viscosity of rocks is also a strong (exponential) function of temperature. This is because the temperature inside the Earth varies from 0 near the surface to several thousands of degree in its deep interior.</p>
+<figure class="align-default" id="temperature-profile">
+<a class="reference internal image-reference" href="_images/temperature-profile.jpeg"><img alt="_images/temperature-profile.jpeg" src="_images/temperature-profile.jpeg" style="height: 250px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Earth’s internal temperature structure from <span id="id1">Steinberger and Calderwood [<a class="reference internal" href="references.html#id10" title="Bernhard Steinberger and Arthur R. Calderwood. Models of large‐scale viscous flow in the earth's mantle with constraints from mineral physics and surface observations. Geophysical Journal International, 167(3):1461–1481, 2006. doi:10.1111/j.1365-246x.2006.03131.x.">7</a>]</span></span><a class="headerlink" href="#temperature-profile" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Over that range of temperature (and pressure) values the viscosity of Earth’s material (rocks) varies by many orders of magnitude.</p>
+<figure class="align-default" id="viscosity-profile">
+<a class="reference internal image-reference" href="_images/viscosity-profile.jpeg"><img alt="_images/viscosity-profile.jpeg" src="_images/viscosity-profile.jpeg" style="height: 250px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Earth’s internal viscosity structure from <span id="id2">Steinberger and Calderwood [<a class="reference internal" href="references.html#id10" title="Bernhard Steinberger and Arthur R. Calderwood. Models of large‐scale viscous flow in the earth's mantle with constraints from mineral physics and surface observations. Geophysical Journal International, 167(3):1461–1481, 2006. doi:10.1111/j.1365-246x.2006.03131.x.">7</a>]</span></span><a class="headerlink" href="#viscosity-profile" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="thinsheet.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Thin sheet model</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="approx.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Thin sheet approximation</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Jean Braun
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

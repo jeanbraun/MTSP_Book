@@ -1,0 +1,566 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>References &#8212; Reading course</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.4cbf315f70debaebd550c87a6162cf0f.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'references';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Glossary" href="glossary.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/Logo2.png" class="logo__image only-light" alt="Reading course - Home"/>
+    <script>document.write(`<img src="_static/Logo2.png" class="logo__image only-dark" alt="Reading course - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    What controls the height of mountain belts on Earth?
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="concepts.html">Some basic concepts</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="isostasy.html">Principle of isostasy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="exercise-isostasy.html">A simple exercise on isostasy</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="thinsheet.html">Thin sheet model</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="stokes.html">Stokes flow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="approx.html">Thin sheet approximation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="spl.html">Stream Power Law</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="spl-details.html">SPL in details</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spl-solution.html">Steady-state profile</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="glacial.html">Glacial erosion</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="glacial-erosion.html">Glacial erosion law</a></li>
+<li class="toctree-l3"><a class="reference internal" href="glacial-constraints.html">Constraints on erosion law</a></li>
+<li class="toctree-l3"><a class="reference internal" href="glacial-models.html">Ice models</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="dimension.html">Dimensionless numbers</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="diffusion-advection.html">Diffusion-advection equation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="solution.html">Steady-state solution</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="hypothesis1.html">Hypothesis 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hypothesis2.html">Hypothesis 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hypothesis3.html">Hypothesis 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hypothesis4.html">Hypothesis 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="debate.html">Debate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reading.html">Additional reading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">References</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/references.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>References</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="references">
+<h1>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h1>
+<div class="docutils container" id="id1">
+<dl class="citation">
+<dt class="label" id="id5"><span class="brackets">1</span></dt>
+<dd><p>Jean Braun. The many surface expressions of mantle dynamics. <em>Nature Geoscience</em>, 3(12):825–833, 2010. <a class="reference external" href="https://doi.org/10.1038/ngeo1020">doi:10.1038/ngeo1020</a>.</p>
+</dd>
+<dt class="label" id="id6"><span class="brackets">2</span></dt>
+<dd><p>Philip England and Dan McKenzie. A thin viscous sheet model for continental deformation. <em>Geophysical Journal International</em>, 70(2):295–321, 1982. <a class="reference external" href="https://doi.org/10.1111/j.1365-246x.1982.tb04969.x">doi:10.1111/j.1365-246x.1982.tb04969.x</a>.</p>
+</dd>
+<dt class="label" id="id3"><span class="brackets">3</span></dt>
+<dd><p>Kelin X Whipple and Gregory E Tucker. Dynamics of the stream‐power river incision model: implications for height limits of mountain ranges, landscape response timescales, and research needs. <em>Journal of Geophysical Research: Solid Earth (1978–2012)</em>, 104(B8):17661–17674, 1999. <a class="reference external" href="https://doi.org/10.1029/1999jb900120">doi:10.1029/1999jb900120</a>.</p>
+</dd>
+<dt class="label" id="id7"><span class="brackets">4</span></dt>
+<dd><p>Sebastian G. Wolf, Ritske S. Huismans, Jean Braun, and Xiaoping Yuan. Topography of mountain belts controlled by rheology and surface processes. <em>Nature</em>, 606(7914):516–521, 2022. <a class="reference external" href="https://doi.org/10.1038/s41586-022-04700-6">doi:10.1038/s41586-022-04700-6</a>.</p>
+</dd>
+<dt class="label" id="id8"><span class="brackets">5</span></dt>
+<dd><p>DL Egholm, SB Nielsen, VK Pedersen, and J.-E. Lesemann. Glacial effects limiting mountain height. <em>Nature</em>, 460(7257):884–887, 2009. <a class="reference external" href="https://doi.org/10.1038/nature08263">doi:10.1038/nature08263</a>.</p>
+</dd>
+<dt class="label" id="id9"><span class="brackets">6</span></dt>
+<dd><p>Luce Fleitout and Claude Froidevaux. Tectonics and topography for a lithosphere containing density heterogeneities. <em>Tectonics</em>, 1982. <a class="reference external" href="https://doi.org/10.1029/tc001i001p00021">doi:10.1029/tc001i001p00021</a>.</p>
+</dd>
+<dt class="label" id="id10"><span class="brackets">7</span></dt>
+<dd><p>Bernhard Steinberger and Arthur R. Calderwood. Models of large‐scale viscous flow in the earth's mantle with constraints from mineral physics and surface observations. <em>Geophysical Journal International</em>, 167(3):1461–1481, 2006. <a class="reference external" href="https://doi.org/10.1111/j.1365-246x.2006.03131.x">doi:10.1111/j.1365-246x.2006.03131.x</a>.</p>
+</dd>
+<dt class="label" id="id4"><span class="brackets">8</span></dt>
+<dd><p>E. Deal, J. Braun, and G. Botter. Understanding the role of rainfall and hydrology in determining fluvial erosion efficiency. <em>Journal of Geophysical Research: Earth Surface</em>, 123(4):744–778, 2018. <a class="reference external" href="https://doi.org/10.1002/2017jf004393">doi:10.1002/2017jf004393</a>.</p>
+</dd>
+<dt class="label" id="id2"><span class="brackets">9</span></dt>
+<dd><p>Kelin X. Whipple, Gregory S. Hancock, and Robert S. Anderson. River incision into bedrock: mechanics and relative efficacy of plucking, abrasion, and cavitation. <em>GSA Bulletin</em>, 112(3):490–503, 2000. <a class="reference external" href="https://doi.org/10.1130/0016-7606(2000)112&lt;490:riibma&gt;2.0.co;2">doi:10.1130/0016-7606(2000)112&lt;490:riibma&gt;2.0.co;2</a>.</p>
+</dd>
+<dt class="label" id="id22"><span class="brackets">10</span></dt>
+<dd><p>John T Hack. Studies of longitudinal stream profiles in virginia and mariland. Technical Report 294-B, United Stets Government Printing Oftice, Washington, 1957.</p>
+</dd>
+<dt class="label" id="id23"><span class="brackets">11</span></dt>
+<dd><p>Chuanqi He, Ci-Jian Yang, Jens M. Turowski, Richard F. Ott, Jean Braun, Hui Tang, Shadi Ghantous, Xiaoping Yuan, and Gaia Stucky de Quay. A global dataset of the shape of drainage systems. <em>Earth System Science Data</em>, 16(2):1151–1166, 2024. <a class="reference external" href="https://doi.org/10.5194/essd-16-1151-2024">doi:10.5194/essd-16-1151-2024</a>.</p>
+</dd>
+<dt class="label" id="id24"><span class="brackets">12</span></dt>
+<dd><p>Thomas Westerhold, Norbert Marwan, Anna Joy Drury, Diederik Liebrand, Claudia Agnini, Eleni Anagnostou, James S. K. Barnet, Steven M. Bohaty, David De Vleeschouwer, Fabio Florindo, Thomas Frederichs, David A. Hodell, Ann E. Holbourn, Dick Kroon, Vittoria Lauretano, Kate Littler, Lucas J. Lourens, Mitchell Lyle, Heiko Pälike, Ursula Röhl, Jun Tian, Roy H. Wilkens, Paul A. Wilson, and James C. Zachos. An astronomically dated record of earth’s climate and its predictability over the last 66 million years. <em>Science</em>, 369(6509):1383–1387, 2020. <a class="reference external" href="https://doi.org/10.1126/science.aba6853">doi:10.1126/science.aba6853</a>.</p>
+</dd>
+<dt class="label" id="id11"><span class="brackets">13</span></dt>
+<dd><p>P Molnar and P England. Late cenozoic uplift of mountain ranges and global climate change: chicken or egg? <em>Nature</em>, 1990.</p>
+</dd>
+<dt class="label" id="id12"><span class="brackets">14</span></dt>
+<dd><p>Frédéric Herman, Diane Seward, Pierre G Valla, Andrew Carter, Barry Kohn, Sean D Willett, and Todd A Ehlers. Worldwide acceleration of mountain erosion under a cooling climate. <em>Nature</em>, 504(7480):423–6, 2013. <a class="reference external" href="https://doi.org/10.1038/nature12877">doi:10.1038/nature12877</a>.</p>
+</dd>
+<dt class="label" id="id13"><span class="brackets">15</span></dt>
+<dd><p>Taylor F. Schildgen, Pieter A. van der Beek, Hugh D. Sinclair, and Rasmus C. Thiede. Spatial correlation bias in late-cenozoic erosion histories derived from thermochronology. <em>Nature</em>, 559(7712):89–93, 2018. <a class="reference external" href="https://doi.org/10.1038/s41586-018-0260-6">doi:10.1038/s41586-018-0260-6</a>.</p>
+</dd>
+<dt class="label" id="id15"><span class="brackets">16</span></dt>
+<dd><p>Bernard Hallet. A theoretical model of glacial abrasion. <em>Journal of Glaciology</em>, 23(89):39–50, 1979. <a class="reference external" href="https://doi.org/10.3189/s0022143000029725">doi:10.3189/s0022143000029725</a>.</p>
+</dd>
+<dt class="label" id="id20"><span class="brackets">17</span></dt>
+<dd><p>Michéle Koppes, Bernard Hallet, Eric Rignot, Jérémie Mouginot, Julia Wellner, and Katherine Boldt. Observed latitudinal variations in erosion as a function of glacier dynamics. <em>Nature</em>, 526(7571):100–103, 2015. <a class="reference external" href="https://doi.org/10.1038/nature15385">doi:10.1038/nature15385</a>.</p>
+</dd>
+<dt class="label" id="id21"><span class="brackets">18</span></dt>
+<dd><p>Frédéric Herman, Olivier Beyssac, Mattia Brughelli, Stuart N. Lane, Sébastien Leprince, Thierry Adatte, Jiao Y. Y. Lin, Jean-Philippe Avouac, and Simon C. Cox. Erosion by an alpine glacier. <em>Science</em>, 350(6257):193–195, 2015. <a class="reference external" href="https://doi.org/10.1126/science.aab2386">doi:10.1126/science.aab2386</a>.</p>
+</dd>
+<dt class="label" id="id19"><span class="brackets">19</span></dt>
+<dd><p>Martin J Siegert. <em>Role of glaciers and ice sheets in climate and the global water cycle</em>. John Wiley &amp; Sons, Ltd, 2013. <a class="reference external" href="https://doi.org/10.1002/0470848944.hsa170">doi:10.1002/0470848944.hsa170</a>.</p>
+</dd>
+<dt class="label" id="id16"><span class="brackets">20</span></dt>
+<dd><p>Wouter H Knap, Johannes Oerlemans, and Martin Cabée. Climate sensitivity of the ice cap of king george island, south shetland islands, antarctica. <em>Annals of Glaciology</em>, 23:154–159, 1996. <a class="reference external" href="https://doi.org/10.3189/s0260305500013380">doi:10.3189/s0260305500013380</a>.</p>
+</dd>
+<dt class="label" id="id14"><span class="brackets">21</span></dt>
+<dd><p>J Braun, D Zwartz, and JH Tomkin. A new surface-processes model combining glacial and fluvial erosion. <em>Annals of Glaciology</em>, 28:282–290, 1999. <a class="reference external" href="https://doi.org/10.3189/172756499781821864">doi:10.3189/172756499781821864</a>.</p>
+</dd>
+<dt class="label" id="id17"><span class="brackets">22</span></dt>
+<dd><p>David L Egholm, Mads F Knudsen, Chris D Clark, and Jerome E Lesemann. Modeling the flow of glaciers in steep terrains: the integrated second‐order shallow ice approximation (iSOSIA). <em>Journal of Geophysical Research: Earth Surface (2003–2012)</em>, 2011. <a class="reference external" href="https://doi.org/10.1029/2010jf001900">doi:10.1029/2010jf001900</a>.</p>
+</dd>
+<dt class="label" id="id18"><span class="brackets">23</span></dt>
+<dd><p>Guillaume Cordonnier, Guillaume Jouvet, Adrien Peytavie, Jean Braun, Marie-Paule Cani, Bedrich Benes, Eric Galin, Eric Guérin, and James Gain. Forming terrains by glacial erosion. <em>ACM Transactions on Graphics (TOG)</em>, 42(4):1–14, 2023. <a class="reference external" href="https://doi.org/10.1145/3592422">doi:10.1145/3592422</a>.</p>
+</dd>
+<dt class="label" id="id25"><span class="brackets">24</span></dt>
+<dd><p>Sean D Willett, Rudy Slingerland, and Niels Hovius. Uplift, shortening, and steady state topography in active mountain belts. <em>American Journal of Science</em>, 301(4-5):455–485, 2001. <a class="reference external" href="https://doi.org/10.2475/ajs.301.4-5.455">doi:10.2475/ajs.301.4-5.455</a>.</p>
+</dd>
+<dt class="label" id="id26"><span class="brackets">25</span></dt>
+<dd><p>Armin Dielforder, Ralf Hetzel, and Onno Oncken. Megathrust shear force controls mountain height at convergent plate margins. <em>Nature</em>, 582(7811):225–229, 2020. <a class="reference external" href="https://doi.org/10.1038/s41586-020-2340-7">doi:10.1038/s41586-020-2340-7</a>.</p>
+</dd>
+<dt class="label" id="id27"><span class="brackets">26</span></dt>
+<dd><p>Sean D Willett. Orogeny and orography: the effects of erosion on the structure of mountain belts. <em>Journal of Geophysical Research: Solid Earth (1978–2012)</em>, 104(B12):28957–28981, 1999. <a class="reference external" href="https://doi.org/10.1029/1999jb900248">doi:10.1029/1999jb900248</a>.</p>
+</dd>
+<dt class="label" id="id28"><span class="brackets">27</span></dt>
+<dd><p>PO Koons. The topographic evolution of collisional mountain belts; a numerical look at the southern alps, new zealand. <em>American Journal of Science</em>, 1989. <a class="reference external" href="https://doi.org/10.2475/ajs.289.9.1041">doi:10.2475/ajs.289.9.1041</a>.</p>
+</dd>
+<dt class="label" id="id29"><span class="brackets">28</span></dt>
+<dd><p>Kelin X Whipple, Eric Kirby, and Simon H Brocklehurst. Geomorphic limits to climate-induced increases in topographic relief. <em>Nature</em>, 401(6748):39–43, 1999. <a class="reference external" href="https://doi.org/10.1038/43375">doi:10.1038/43375</a>.</p>
+</dd>
+<dt class="label" id="id30"><span class="brackets">29</span></dt>
+<dd><p>George E. Hilley, Stephen Porder, Felipe Aron, Curtis W. Baden, Samuel A. Johnstone, Frances Liu, Robert Sare, Aaron Steelquist, and Holly H. Young. Earth’s topographic relief potentially limited by an upper bound on channel steepness. <em>Nature Geoscience</em>, 12(10):828–832, 2019. <a class="reference external" href="https://doi.org/10.1038/s41561-019-0442-3">doi:10.1038/s41561-019-0442-3</a>.</p>
+</dd>
+<dt class="label" id="id31"><span class="brackets">30</span></dt>
+<dd><p>O Vanderhaeghe, S Medvedev, P Fullsack, C Beaumont, and RA Jamieson. Evolution of orogenic wedges and continental plateaux: insights from crustal thermal–mechanical models overlying subducting mantle lithosphere. <em>Geophysical Journal International</em>, 153(1):27–51, 2003. <a class="reference external" href="https://doi.org/10.1046/j.1365-246x.2003.01861.x">doi:10.1046/j.1365-246x.2003.01861.x</a>.</p>
+</dd>
+<dt class="label" id="id32"><span class="brackets">31</span></dt>
+<dd><p>C Beaumont, RA Jamieson, MH Nguyen, and B Lee. Himalayan tectonics explained by extrusion of a low-viscosity crustal channel coupled to focused surface denudation. <em>Nature</em>, 2001. <a class="reference external" href="https://doi.org/10.1038/414738a">doi:10.1038/414738a</a>.</p>
+</dd>
+</dl>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="glossary.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Glossary</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Jean Braun
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
