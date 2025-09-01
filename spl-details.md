@@ -1,5 +1,7 @@
 # SPL in details
 
+## Hypotheses
+
 Here, inspired by {cite:t}`Whipple1999JournalofGeophysicalResearchSolidEarth19782012`, we provide the details of the derivation of the SPL so that the reader can appreciate the hypotheses and approximations it is based on.
 
 `````{tab-set}
@@ -50,6 +52,8 @@ commonly observed value for $c$ is 1.
 ````
 
 `````
+
+## Combined equation
 
 Combining all these relationships leads to the following expression for the erosion rate:
 ```{math}

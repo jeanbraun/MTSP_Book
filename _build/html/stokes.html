@@ -345,7 +345,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -361,6 +363,17 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-equation">Basic equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#balance-of-forces">Balance of forces</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#incompressibility">Incompressibility</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rheology">Rheology</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -372,6 +385,8 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="stokes-flow">
 <span id="stokes-section"></span><h1>Stokes flow<a class="headerlink" href="#stokes-flow" title="Permalink to this heading">#</a></h1>
+<section id="basic-equation">
+<h2>Basic equation<a class="headerlink" href="#basic-equation" title="Permalink to this heading">#</a></h2>
 <p>Stokes equation is a simplified form of Navier-Stokes equation that assumes that one can neglect inertial forces (and thus turbulence). It takes the following form:</p>
 <div class="math notranslate nohighlight" id="equation-stokes-force">
 <span class="eqno">(1)<a class="headerlink" href="#equation-stokes-force" title="Permalink to this equation">#</a></span>\[\frac{\partial\tau_{ij}}{\partial x_j}=\frac{\partial p}{\partial x_i}-\rho gz_i\]</div>
@@ -380,6 +395,9 @@ document.write(`
 <p class="admonition-title">Note</p>
 <p>A Stoke fluid is, by definition, devoid of inertia which implies that if the driving force stops, the fluid motion stops instantaneously. Honey behaves like a Stoke fluid: if you stir a honey jar with a spoon, once you remove the spoon, the honey stops moving instantly. This behaviour is also observed in the Earth on geological time scales: it explains why hot spot chains (like the <a class="reference external" href="https://www.usgs.gov/media/images/hawaiian-emperor-seamount-chain">Hawaiian-Emperor seamont chain</a>) display very abrupt strike changes that correspond to “instantaneous” changes in plate velocities.</p>
 </div>
+</section>
+<section id="balance-of-forces">
+<h2>Balance of forces<a class="headerlink" href="#balance-of-forces" title="Permalink to this heading">#</a></h2>
 <p>Equation <a class="reference internal" href="#equation-stokes-force">(1)</a> represents the balance between three forces that must exist at any point within the fluid:</p>
 <ol class="arabic simple">
 <li><p>the first term (on the left-hand side of the equation) represents the viscous forces</p></li>
@@ -391,10 +409,16 @@ document.write(`
 <p class="admonition-title">Note</p>
 <p>Stokes flow have interesting properties. One of them is that they are perfectly reversible. This can be appreciated on the <a class="reference external" href="https://www.youtube.com/watch?v=rA6T83FKuE8">following video</a></p>
 </div>
+</section>
+<section id="incompressibility">
+<h2>Incompressibility<a class="headerlink" href="#incompressibility" title="Permalink to this heading">#</a></h2>
 <p>If we wish to use Stokes equation to represent the motion and deformation of plates and flow in the underlying mantle, we must also assume that the flow is incompressible. Mathematically, this is equivalent to assuming that, at every point within the fluid, the divergence of the velocity vector is nil. In other words:</p>
 <div class="math notranslate nohighlight" id="equation-incompressibility">
 <span class="eqno">(2)<a class="headerlink" href="#equation-incompressibility" title="Permalink to this equation">#</a></span>\[\frac{\partial u_i}{\partial x_i}=0\]</div>
 <p>where <span class="math notranslate nohighlight">\(u_i\)</span> are the components of the velocity vector. Note that in this equation as in equation <a class="reference internal" href="#equation-stokes-force">(1)</a>, we have used <a class="reference external" href="https://en.wikipedia.org/wiki/Einstein_notation">Einstein’s notation</a> which assumes that if an index appears more than once in a single term and is not otherwise defined, it implies summation.</p>
+</section>
+<section id="rheology">
+<h2>Rheology<a class="headerlink" href="#rheology" title="Permalink to this heading">#</a></h2>
 <p>We see that the first equation <a class="reference internal" href="#equation-stokes-force">(1)</a> refers to stresses (or forces), whereas the second <a class="reference internal" href="#equation-incompressibility">(2)</a> referes to velocities. To combine the two equations, one needs to introduce a rheological law or <a class="reference internal" href="glossary.html#term-Rheology"><span class="xref std std-term">rheology</span></a>, i.e., a rule that defines the relationship between deformation (velocity) and stress (force). Here we assume a non-linear viscous behaviour of the form:</p>
 <div class="math notranslate nohighlight" id="equation-rheology">
 <span class="eqno">(3)<a class="headerlink" href="#equation-rheology" title="Permalink to this equation">#</a></span>\[\dot\epsilon_{ij} = B^{-n}T^{n-1}\sigma_{ij}\]</div>
@@ -419,6 +443,7 @@ document.write(`
 </figcaption>
 </figure>
 </div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -476,6 +501,24 @@ document.write(`
             
             
               
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-equation">Basic equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#balance-of-forces">Balance of forces</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#incompressibility">Incompressibility</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rheology">Rheology</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
             
           </div>
           <footer class="bd-footer-content">
@@ -495,7 +538,7 @@ By Jean Braun
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2025.
       <br/>
     
   </p>

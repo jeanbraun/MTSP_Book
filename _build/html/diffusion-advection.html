@@ -345,7 +345,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -361,6 +363,18 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-equation">Basic equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#boundary-conditions">Boundary conditions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensionless-variables">Dimensionless variables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensionless-equation">Dimensionless equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#peclet-number">Péclet number</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -372,6 +386,8 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="diffusion-advection-equation">
 <h1>Diffusion-advection equation<a class="headerlink" href="#diffusion-advection-equation" title="Permalink to this heading">#</a></h1>
+<section id="basic-equation">
+<h2>Basic equation<a class="headerlink" href="#basic-equation" title="Permalink to this heading">#</a></h2>
 <p>The partial differential equation (PDE) governing the one-dimensional, transient transport of heat by diffusion (conduction) and advection is:</p>
 <div class="math notranslate nohighlight" id="equation-heat">
 <span class="eqno">(10)<a class="headerlink" href="#equation-heat" title="Permalink to this equation">#</a></span>\[\frac{\partial T}{\partial t}-u_0\frac{\partial T}{\partial z}=K\frac{\partial^2T}{\partial z^2}\]</div>
@@ -380,6 +396,9 @@ document.write(`
 <p class="admonition-title">Note</p>
 <p>Note that because we are interested in erosion, the velocity of rocks towards the surface is in the opposite direction to that of increasing depth, <span class="math notranslate nohighlight">\(z\)</span>. This is the reason why the advection term is negative.</p>
 </div>
+</section>
+<section id="boundary-conditions">
+<h2>Boundary conditions<a class="headerlink" href="#boundary-conditions" title="Permalink to this heading">#</a></h2>
 <p>To this PDE, one must associate two boundary conditions, one at the surface (<span class="math notranslate nohighlight">\(z=0\)</span>) and one at a depth <span class="math notranslate nohighlight">\(L\)</span> that corresponds to the thickness of the layer being eroded towards the surface:</p>
 <div class="math notranslate nohighlight" id="equation-heat-bc">
 <span class="eqno">(11)<a class="headerlink" href="#equation-heat-bc" title="Permalink to this equation">#</a></span>\[T(z=0)=0 \textrm{ and }T(z=L)=T_L\]</div>
@@ -388,10 +407,16 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[T(t=0)=T_0(z)\]</div>
 <p>The need for boundary and initial conditions arise from the fact that the equation is a <em>differential</em> equation meaning that it only informs us on the rate of change (in space or time) of the solution, not on its absolute value. There is therefore a need to <em>fix</em> the solution in space and time (or give some reference values for the solution) so that an obsolute value can be derived from the equation.</p>
+</section>
+<section id="dimensionless-variables">
+<h2>Dimensionless variables<a class="headerlink" href="#dimensionless-variables" title="Permalink to this heading">#</a></h2>
 <p>To define dimensionless numbers, one needs to introduce dimensionless variables. To do so we use the initial and boundary conditions:</p>
 <div class="math notranslate nohighlight">
 \[z'=z/L,\ T'=T/T_L,\ t'=t/\tau\]</div>
 <p>Note that we have introduced an arbitrary time scale, <span class="math notranslate nohighlight">\(\tau\)</span>. We will see later how it can be defined.</p>
+</section>
+<section id="dimensionless-equation">
+<h2>Dimensionless equation<a class="headerlink" href="#dimensionless-equation" title="Permalink to this heading">#</a></h2>
 <p>If we introduce these dimensionless variables in the equation, we obtain the dimensionless form of the equation:</p>
 <div class="math notranslate nohighlight">
 \[\frac{T_L}{\tau}\frac{\partial T'}{\partial t'}-u_0\frac{T_L}{L}\frac{\partial T'}{\partial z'}=K\frac{T_L}{L^2}\frac{\partial^2T'}{\partial z'^2}\]</div>
@@ -410,6 +435,9 @@ document.write(`
 <p>which leads to the following dimensionless form of the equation:</p>
 <div class="math notranslate nohighlight" id="equation-heat-nodim">
 <span class="eqno">(12)<a class="headerlink" href="#equation-heat-nodim" title="Permalink to this equation">#</a></span>\[\frac{\partial T'}{\partial t'}-\mathbf{Pe}\frac{\partial T'}{\partial z'}=\frac{\partial^2T'}{\partial z'^2}\]</div>
+</section>
+<section id="peclet-number">
+<h2>Péclet number<a class="headerlink" href="#peclet-number" title="Permalink to this heading">#</a></h2>
 <p>Note that the Péclet number can also be regarded as the ratio of two time scales:</p>
 <div class="math notranslate nohighlight">
 \[\mathbf{Pe}=\frac{Lu_0}{K}=\frac{\tau_c}{\tau_a}\]</div>
@@ -422,6 +450,7 @@ document.write(`
 <p>the advection time scale.</p>
 <p>We see that the value of the Péclet number determines the behaviour of this solution. If <span class="math notranslate nohighlight">\(\mathbf{Pe}&lt;&lt;1\)</span>, the second term of the equation becomes negligible; advection does not contribute to the transport of heat. Conversely, if <span class="math notranslate nohighlight">\(\mathbf{Pe}&gt;&gt;1\)</span>, advection dominates.</p>
 <p>To further illustrate the use of this dimensionless number, I will now derive the steady-state solution to the above equation and demonstrate how it can be expressed in terms of a single parameter, namely, the Péclet number.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -479,6 +508,25 @@ document.write(`
             
             
               
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-equation">Basic equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#boundary-conditions">Boundary conditions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensionless-variables">Dimensionless variables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensionless-equation">Dimensionless equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#peclet-number">Péclet number</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
             
           </div>
           <footer class="bd-footer-content">
@@ -498,7 +546,7 @@ By Jean Braun
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2025.
       <br/>
     
   </p>

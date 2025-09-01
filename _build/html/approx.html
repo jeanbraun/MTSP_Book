@@ -345,7 +345,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -361,6 +363,16 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-assumptions">Basic assumptions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thin-sheet-equation">Thin sheet equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretation">Interpretation</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -372,6 +384,8 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="thin-sheet-approximation">
 <h1>Thin sheet approximation<a class="headerlink" href="#thin-sheet-approximation" title="Permalink to this heading">#</a></h1>
+<section id="basic-assumptions">
+<h2>Basic assumptions<a class="headerlink" href="#basic-assumptions" title="Permalink to this heading">#</a></h2>
 <p>The thin sheet approximation is an application of Stokes equation to the behaviour of a thin viscous sheet. It implies:</p>
 <ol class="arabic simple">
 <li><p>that vertical columns in the sheet cannot be sheared</p></li>
@@ -381,6 +395,9 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[\dot\epsilon_{13}=\dot\epsilon_{31}=\dot\epsilon_{23}=\dot\epsilon_{32}=0\]</div>
 <p>where the 3rd index corresponds to the vertical component, and by integrating Stokes equation along the vertical dimension.</p>
+</section>
+<section id="thin-sheet-equation">
+<h2>Thin sheet equation<a class="headerlink" href="#thin-sheet-equation" title="Permalink to this heading">#</a></h2>
 <p>Using also the incompressibility condition - equation<a class="reference internal" href="stokes.html#equation-incompressibility">(2)</a> -  that can be expressed in terms of the strain rate components:</p>
 <div class="math notranslate nohighlight">
 \[\dot\epsilon_{33}=-(\dot\epsilon_{11}+\dot\epsilon_{22})\]</div>
@@ -391,11 +408,15 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[\bar p=\frac{1}{L}\int_0^L p\ dz=\frac{g\rho_ch^2}{2L}(1-\rho_c/\rho_m)+\frac{g\rho_mL}{2}\]</div>
 <p><span class="math notranslate nohighlight">\(L\)</span> and <span class="math notranslate nohighlight">\(h\)</span> are the lithospheric and crustal thicknesses, respectively, <span class="math notranslate nohighlight">\(\rho_c\)</span> and <span class="math notranslate nohighlight">\(\rho_m\)</span> the crustal and mantle densities and <span class="math notranslate nohighlight">\(\dot E\)</span> is the second <a class="reference internal" href="glossary.html#term-Invariant"><span class="xref std std-term">invariant</span></a> of the strain rate tensor.</p>
+</section>
+<section id="interpretation">
+<h2>Interpretation<a class="headerlink" href="#interpretation" title="Permalink to this heading">#</a></h2>
 <p>Combining the last two equations yields:</p>
 <div class="math notranslate nohighlight" id="equation-thinsheet">
 <span class="eqno">(5)<a class="headerlink" href="#equation-thinsheet" title="Permalink to this equation">#</a></span>\[\frac{1}{2}\frac{\partial}{\partial x_j}(\frac{\partial u_j}{\partial x_i}+\frac{\partial u_i}{\partial x_j})=\frac{g\rho_c h}{BL}(1-\rho_c/\rho_m)\dot E^{1-1/n}\frac{\partial h}{\partial x_i}+(1-1/n)\dot E^{-1}\frac{\partial\dot E}{\partial x_j}\dot\epsilon_{ij}\]</div>
 <p>where the indices <span class="math notranslate nohighlight">\(i\)</span> and <span class="math notranslate nohighlight">\(j\)</span> now only vary between 1 and 2.</p>
 <p>In this formulation the pressure gradients arise from lateral variations in density interfaces; it implies that there remain only two forces at play and the equation therefore expresses a balance between viscous and gravitational forces only. The first term in equation<a class="reference internal" href="#equation-thinsheet">(5)</a> is the main viscous term, the second the gravitational term and the third term arises from the non-linearity of the rheology (it drops out when <span class="math notranslate nohighlight">\(n=1\)</span>).</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -453,6 +474,23 @@ document.write(`
             
             
               
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-assumptions">Basic assumptions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thin-sheet-equation">Thin sheet equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretation">Interpretation</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
             
           </div>
           <footer class="bd-footer-content">
@@ -472,7 +510,7 @@ By Jean Braun
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2025.
       <br/>
     
   </p>

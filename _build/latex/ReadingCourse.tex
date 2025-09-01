@@ -16,8 +16,6 @@
 \makeatletter\@ifclassloaded{memoir}
 {\ifdefined\memhyperindexfalse\memhyperindexfalse\fi}{}\makeatother
 
-\PassOptionsToPackage{booktabs}{sphinx}
-\PassOptionsToPackage{colorrows}{sphinx}
 
 \PassOptionsToPackage{warn}{textcomp}
 
@@ -87,7 +85,7 @@
         
 
 \title{Reading course}
-\date{Aug 29, 2025}
+\date{Sep 01, 2025}
 \release{}
 \author{Jean Braun}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -103,11 +101,19 @@
 \phantomsection\label{\detokenize{intro::doc}}
 
 
-\sphinxAtStartPar
-This reading course addresses the question of what controls the height of mountain belts. Is it the strength of the \DUrole{xref,std,std-term}{lithosphere} compared to the weight of the topography, the efficiency of erosion (and thus a function of climate) or the rate at which plates move at the Earth’s surface.
+\begin{DUlineblock}{0em}
+\item[] \sphinxstylestrong{\Large Motivation}
+\end{DUlineblock}
 
 \sphinxAtStartPar
-To illustrate this point, let’s look at a picture taken from space where we can appreciate how smooth the Earth’s surface is. The range of surface topography is under 10,000 m compared to the Earth’s radius of 6371 km. A ratio of approximately 1/600 making the Earth’s relief about the size of the imperfection in an orange peal compared to its size.
+This reading course addresses the question of what controls the height of mountain belts. Is it the strength of the {\hyperref[\detokenize{glossary:term-Lithosphere}]{\sphinxtermref{\DUrole{xref,std,std-term}{lithosphere}}}} compared to the weight of the topography, the efficiency of erosion (and thus a function of climate) or the rate at which plates move at the Earth’s surface.
+
+\begin{DUlineblock}{0em}
+\item[] \sphinxstylestrong{\large Earth’s topography}
+\end{DUlineblock}
+
+\sphinxAtStartPar
+To illustrate this point, let’s look at a picture taken from space where we can appreciate how smooth the Earth’s surface is. On Earth, the range of surface topography is under 10 km compared to the Earth’s radius of 6371 km. A ratio of approximately 1/600 making the Earth’s relief about the size of the imperfection in an orange peal compared to its size.
 
 \begin{figure}[htbp]
 \centering
@@ -118,8 +124,12 @@ To illustrate this point, let’s look at a picture taken from space where we ca
 \subsubsection*{What is the stress caused by 1 km of surface topography?}
 
 \sphinxAtStartPar
-The stress caused by a a topography \(\Delta h\) is equal to \(\sigma=\rho g \Delta h\) where \(\rho\) is rock density and \(g\) the gravitational acceleration. Thus, assuming a value of 9.81 for \(g\) and that surface rocks have a density of approximately 2400 \(kg/m^3\), a 1000 m high topography causes a stress equal to:
+The stress caused by a topography \(\Delta h\) is equal to \(\sigma=\rho g \Delta h\) where \(\rho\) is rock density and \(g\) the gravitational acceleration. Thus, assuming a value of 9.81 for \(g\) and that surface rocks have a density of approximately 2400 \(kg/m^3\), a 1000 m high topography causes a stress equal to:
 \(\sigma = 2400\times 9.81 \times 1000 = 23.544\) MPa.
+
+\begin{DUlineblock}{0em}
+\item[] \sphinxstylestrong{\large Other planetary bodies}
+\end{DUlineblock}
 
 \sphinxAtStartPar
 By comparison, Iapetus, one of Saturn’s satellites with a radius of only 734 km, displays a 13km\sphinxhyphen{}high equatorial ridge, yielding a relief/radius ratio of approximaelty 1/50. Is it due to the reduced gravity and thus weight of topography or to the absence of an atmosphere and thus of erosion processes that is responsible for this much taller relative relief?
@@ -131,8 +141,12 @@ By comparison, Iapetus, one of Saturn’s satellites with a radius of only 734 k
 \noindent\sphinxincludegraphics[height=150\sphinxpxdimen]{{iapetus}.png}
 \caption{Iapetus and its equatorial bulge}\label{\detokenize{intro:iapetus}}\end{figure}
 
+\begin{DUlineblock}{0em}
+\item[] \sphinxstylestrong{\large Earth’s mountains}
+\end{DUlineblock}
+
 \sphinxAtStartPar
-This question can be asked at the planetary scale but the answer is also highly relevant to understand the variability in mountain height at the Earth’s surface. The Earth’s topography is characterized by relatively flat and low\sphinxhyphen{}elevation continental interiors with narrow high\sphinxhyphen{}elevation mountain belts around their bondaries where plates have collided in the recent geological past. Examples of such orogenic belts include the European Alps, the Pyrenees, the Himalayas, the Cordillera or the Southern Alps of New Zealand. But there exists also extensive continental areas called plateaus that are characterized by high elevation and low relief. Examples of plateaus include the Tibetan plateau, the Altiplano but also the south African plateau.
+This question can be asked at the planetary scale but the answer is also highly relevant to understand the variability in mountain height at the Earth’s surface. The Earth’s topography is characterized by relatively flat and low\sphinxhyphen{}elevation continental interiors with narrow high\sphinxhyphen{}elevation mountain belts around their boundaries where plates have collided in the recent geological past. Examples of such orogenic belts include the European Alps, the Pyrenees, the Himalayas, the Cordillera or the Southern Alps of New Zealand. But there exist also extensive continental areas called plateaus that are characterized by high elevation and low relief. Examples of plateaus include the Tibetan plateau, the Altiplano but also the south African plateau.
 
 \begin{figure}[htbp]
 \centering
@@ -141,15 +155,23 @@ This question can be asked at the planetary scale but the answer is also highly 
 \noindent\sphinxincludegraphics[height=300\sphinxpxdimen]{{worldtopo}.png}
 \caption{Earth’s surface topography}\label{\detokenize{intro:worldtopo}}\end{figure}
 
+\begin{DUlineblock}{0em}
+\item[] \sphinxstylestrong{\large Dynamic vs tectonic topography}
+\end{DUlineblock}
+
 \sphinxAtStartPar
-We like to classify topography in two categories: the topography that is related to variations in crustal thickness through the principle of \DUrole{xref,std,std-term}{isostasy} and the topography that is not correlated to variations in crustal thickness and is thus considered to be caused not by tectonic plate interactions (collision or extension) but by flow in the underlying convective mantle. This later type of topography is usual termed \DUrole{xref,std,std-term}{dynamic topography}, in contrast to the former called isostatic or tectonic topography.
+We like to classify topography in two categories: the topography that is related to variations in crustal thickness through the principle of {\hyperref[\detokenize{glossary:term-Isostasy}]{\sphinxtermref{\DUrole{xref,std,std-term}{isostasy}}}} and the topography that is not correlated to variations in crustal thickness and is thus considered to be caused not by tectonic plate interactions (collision or extension) but by flow in the underlying convective mantle. This later type of topography is usual termed {\hyperref[\detokenize{glossary:term-Dynamic-topography}]{\sphinxtermref{\DUrole{xref,std,std-term}{dynamic topography}}}}, in contrast to the former called isostatic or tectonic topography.
 
 \begin{figure}[htbp]
 \centering
 \capstart
 
 \noindent\sphinxincludegraphics[height=400\sphinxpxdimen]{{dynamictopo}.png}
-\caption{Difference between dynamic topography (left) caused by convective flow in the Earth’s mantle and tectonic topography (right) caused by variations in crustal thcikness during collision or extension of tectonic plates}\label{\detokenize{intro:dynamictopo}}\end{figure}
+\caption{Difference between dynamic topography (left) caused by convective flow in the Earth’s mantle and tectonic topography (right) caused by variations in crustal thickness during collision or extension of tectonic plates (modified from Braun {[}\hyperlink{cite.references:id5}{1}{]}).}\label{\detokenize{intro:dynamictopo}}\end{figure}
+
+\begin{DUlineblock}{0em}
+\item[] \sphinxstylestrong{\large Four articles}
+\end{DUlineblock}
 
 \sphinxAtStartPar
 In this course we will use a relatively small number of articles that each proposes a different hypothesis for the control of orogenic topography. It is important that participants read these articles and prepare a set of notes where they will not only summarize the main findings or conclusions but also the hypothesis that were made and the tools that were used.
@@ -185,7 +207,7 @@ Strength and rate
 \noindent{\hspace*{\fill}\sphinxincludegraphics[width=200\sphinxpxdimen]{{england-mckenzie}.png}\hspace*{\fill}}
 
 \sphinxAtStartPar
-\sphinxhref{https://doi.org/10.1111/j.1365-246X.1982.tb04969.x}{England and McKenzie, 1982}
+England and McKenzie {[}\hyperlink{cite.references:id6}{2}{]}
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -221,7 +243,7 @@ Erosion and rate
 \noindent{\hspace*{\fill}\sphinxincludegraphics[width=200\sphinxpxdimen]{{whipple-tucker}.png}\hspace*{\fill}}
 
 \sphinxAtStartPar
-\sphinxhref{https://doi.org/10.1029/1999JB900120}{Whipple and Tucker, 1999}
+Whipple and Tucker {[}\hyperlink{cite.references:id3}{3}{]}
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -257,7 +279,7 @@ Strength, erosion and rate
 \noindent{\hspace*{\fill}\sphinxincludegraphics[width=200\sphinxpxdimen]{{wolfetal}.png}\hspace*{\fill}}
 
 \sphinxAtStartPar
-\sphinxhref{https://doi.org/10.1038/s41586-022-04700-6}{Wolf et al, 2002}
+Wolf \sphinxstyleemphasis{et al.} {[}\hyperlink{cite.references:id7}{4}{]}
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -293,7 +315,7 @@ Glacial buzzsaw
 \noindent{\hspace*{\fill}\sphinxincludegraphics[width=200\sphinxpxdimen]{{egholmetal2009}.png}\hspace*{\fill}}
 
 \sphinxAtStartPar
-\sphinxhref{https://doi.org/10.1038/nature08263}{Egholm et al, 2009}
+Egholm \sphinxstyleemphasis{et al.} {[}\hyperlink{cite.references:id8}{5}{]}
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -317,10 +339,14 @@ Glacial buzzsaw
 \end{sphinxuseclass}
 \end{sphinxuseclass}
 \sphinxAtStartPar
-In the context of this course, I have selected four papers that use numerical modeling as the main tool to support or develop their hypothesis. Furthermore, each paper quantifies their hypothesis by introduicing and assessing the value of a \DUrole{xref,std,std-term}{dimensionless number}.
+In the context of this course, I have selected four papers that use numerical modeling as the main tool to support or develop their hypothesis. Furthermore, most papers quantify their hypothesis by introducing and assessing the value of a {\hyperref[\detokenize{glossary:term-Dimensionless-number}]{\sphinxtermref{\DUrole{xref,std,std-term}{dimensionless number}}}}.
+
+\begin{DUlineblock}{0em}
+\item[] \sphinxstylestrong{\large Objectives}
+\end{DUlineblock}
 
 \sphinxAtStartPar
-I will end this introduction by highlighting the main objectives of the reading course:
+I will end this introduction by highlighting the \sphinxstylestrong{main objectives} of the reading course:
 \begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
@@ -357,7 +383,7 @@ how to present scientific results
 \chapter{Some basic concepts}
 \label{\detokenize{concepts:some-basic-concepts}}\label{\detokenize{concepts::doc}}
 \sphinxAtStartPar
-This course relates to the use of numerical modeling as a tool to address basic questions about the Earth’s behaviour and, in particular in our case, about how tectonic, climate and rheology potentially all contribute to controlling the height of mountain topography on Earth. Numerical models use numerical methods that are used to solve partial differential equations. We will not study these methods but focus here on other tools that are commonly used to understand the behaviour of PDEs as a funciton of model parameter and bounday condition values, namely a dimensional analysis, which leads to the definition of dimensionless numbers.
+This course relates to the use of numerical modeling as a tool to address basic questions about the Earth’s behaviour and, in particular, about how tectonics, climate and rheology potentially all contribute to controlling the height of mountain topography on Earth. {\hyperref[\detokenize{glossary:term-Numerical-model}]{\sphinxtermref{\DUrole{xref,std,std-term}{Numerical model}}}}s use numerical methods that are used to solve {\hyperref[\detokenize{glossary:term-Partial-differential-equation}]{\sphinxtermref{\DUrole{xref,std,std-term}{partial differential equation}}}}s. We will not study all of these methods but focus on a few of them and, most importantly, on another tool that is commonly used to understand the behaviour of PDEs as a function of model parameter and bounday condition values, namely a dimensional analysis, which leads to the definition of dimensionless numbers.
 
 \sphinxAtStartPar
 For this, we will need to introduce a couple of partial differential equations, namely the Stokes equation and the stream power law, as well as other basic physical principles, such as the concept of isostasy.
@@ -367,14 +393,20 @@ For this, we will need to introduce a couple of partial differential equations, 
 
 \section{Principle of isostasy}
 \label{\detokenize{isostasy:principle-of-isostasy}}\label{\detokenize{isostasy::doc}}
+
+\subsection{Simple formulation}
+\label{\detokenize{isostasy:simple-formulation}}
 \sphinxAtStartPar
-The principle of \DUrole{xref,std,std-term}{isostasy} is Archimede’s principle applied to the Earth’s \DUrole{xref,std,std-term}{lithosphere}/\DUrole{xref,std,std-term}{asthenosphere} system. It can be simply stated as \sphinxstylestrong{the weight of any lithospheric column must be the same}. It relies on the existence of a so\sphinxhyphen{}called compensation depth, which corresponds to a level in the Earth’s interior that has very low viscosity (the \DUrole{xref,std,std-term}{asthenosphere}) and thus behaves, on geological time scales, as an inviscid fluid. Such a fluid cannot sustain any horizontal stress and therefore the weight of any column of material above it must be uniform. This compensation depth is usually taken as the base of the lithosphere, which is commonly regarded as the depth where the geotherm is closest to the solidus and thus considered as the least viscous layer in the Earth’s upper regions.
+The principle of {\hyperref[\detokenize{glossary:term-Isostasy}]{\sphinxtermref{\DUrole{xref,std,std-term}{isostasy}}}} is Archimede’s principle applied to the Earth’s {\hyperref[\detokenize{glossary:term-Lithosphere}]{\sphinxtermref{\DUrole{xref,std,std-term}{lithosphere}}}}/{\hyperref[\detokenize{glossary:term-Asthenosphere}]{\sphinxtermref{\DUrole{xref,std,std-term}{asthenosphere}}}} system. It can be simply stated as \sphinxstylestrong{all lithospheric columns must have the same weight}. It relies on the existence of a so\sphinxhyphen{}called compensation depth, which corresponds to a level in the Earth’s interior that has very low viscosity (the {\hyperref[\detokenize{glossary:term-Asthenosphere}]{\sphinxtermref{\DUrole{xref,std,std-term}{asthenosphere}}}}) and thus behaves, on geological time scales, as an inviscid fluid. Such a fluid cannot sustain any horizontal stress and therefore the weight of any column of material above it must be uniform. This compensation depth is usually taken as the base of the lithosphere, which is commonly regarded as the depth where the {\hyperref[\detokenize{glossary:term-Geotherm}]{\sphinxtermref{\DUrole{xref,std,std-term}{geotherm}}}} is closest to the solidus and thus considered as the least viscous layer in the Earth’s upper regions.
 
 \begin{sphinxadmonition}{warning}{Warning:}
 \sphinxAtStartPar
-Even though the viscosity of the asthenosphere is much lower than that of the overlying lithosphere, it remains finite. This means, for example, that the flow of asthenosphere caused by loading by an ice sheet will take several tens of thousands of years to bring the system into isostatic equilibrium. Although very large on human time scales, this time is very large compared to the tectonic time scales of the order of millions of years. This is why one can consider, when considering tectonic processes, that isostatic adjustment is instantaneous.
+Even though the viscosity of the asthenosphere is much lower than that of the overlying lithosphere, it remains finite. This means, for example, that the flow of asthenosphere caused by loading of an ice sheet will take several tens of thousands of years to bring the system into isostatic equilibrium. Although very large on human time scales, this time can be considered as negligible compared to the tectonic time scales of the order of millions of years. This is why one can consider, when considering tectonic processes, that isostatic adjustment is instantaneous.
 \end{sphinxadmonition}
 
+
+\subsection{Mathematical form}
+\label{\detokenize{isostasy:mathematical-form}}
 \sphinxAtStartPar
 From the definition of the principle of isostasy, one can see that it is most useful when used to compare the topography between two lithospheric columns, for example, the difference in height between a continental interior and a mountain belt.
 
@@ -388,20 +420,23 @@ where \(\Delta\rho\) is the difference in density between any two columns of lit
 
 \begin{sphinxadmonition}{note}{Note:}
 \sphinxAtStartPar
-The principle of isostasy is a direct consequence of the quasi\sphinxhyphen{}static form of Newton’s second law that the sum of all forces at any point must be equal to zero.
+The principle of isostasy is also a direct consequence of the quasi\sphinxhyphen{}static form of Newton’s second law that the sum of all forces at any point must be equal to zero.
 \end{sphinxadmonition}
 
+
+\subsection{Potential energy}
+\label{\detokenize{isostasy:potential-energy}}
 \sphinxAtStartPar
-Note that, under the quasi\sphinxhyphen{}static approximation, Newton’s second loaw also implies that the sum of all torques (or force moments) at any point must be balances; this implies that, even if two lithospheric columns are in isostatic balance, there may exist a horizontal stress exerted by one column on the other:
+Note that, under the quasi\sphinxhyphen{}static approximation, Newton’s second law also implies that the sum of all torques (or force moments) at any point must be balanced; this implies that, even if two lithospheric columns are in isostatic balance, there may exist a horizontal stress exerted by one column on the other {[}\hyperlink{cite.references:id9}{6}{]}:
 \begin{equation*}
 \begin{split}\bar\tau_{xx}=\frac{g}{L}\int_{z_0}^L\Delta\rho\ z\ dz\ne 0\end{split}
 \end{equation*}
 \sphinxAtStartPar
-One also states that the two columns have different potential energy. This implies that unless an external force acts on the system, the thickened crust will naturally deform and thin, until its potential energy becomes identical to that of the reference column. This may lead, for example, to orogenic collapse once the tectonic force that drives continantal collision stops acting.
+One also states that the two columns have different potential energy. This implies that unless an external force acts on the system, a lithosphere characterized by a thickened crust will naturally deform and thin, until its potential energy becomes identical to that of a reference or adjacent column. This may lead, for example, to orogenic collapse once the tectonic force that drives continantal collision stops acting.
 
 \begin{sphinxadmonition}{note}{Note:}
 \sphinxAtStartPar
-The principle of isostasy neglects the strength of the lithosphere and the potential it has for sustaining a differential horizontal stress. To address this limitation, one commonly assumes that the lithospehre behaves as a thin elastic plate that is able to sustain some of the stress imposed by additional topography (caused by crustal thickening for example) by flexing. This leads to the concept of \DUrole{xref,std,std-term}{flexural isostasy}.
+The principle of isostasy neglects the strength of the lithosphere and the potential it has for sustaining a differential horizontal stress. To address this limitation, one commonly assumes that the lithospehre behaves as a thin elastic plate that is able to sustain some of the stress imposed by additional topography (caused by crustal thickening for example) by flexing. This leads to the concept of {\hyperref[\detokenize{glossary:term-Flexural-isostasy}]{\sphinxtermref{\DUrole{xref,std,std-term}{flexural isostasy}}}}.
 \end{sphinxadmonition}
 
 \sphinxstepscope
@@ -411,7 +446,10 @@ The principle of isostasy neglects the strength of the lithosphere and the poten
 \label{\detokenize{exercise-isostasy:a-simple-exercise-on-isostasy}}\label{\detokenize{exercise-isostasy::doc}}
 \sphinxAtStartPar
 A simple exercise to compute the height difference between a reference continental interior and a mountain.
-\begin{quote}
+
+
+\subsubsection{Question}
+\label{\detokenize{exercise-isostasy:question}}\begin{quote}
 
 \sphinxAtStartPar
 What is the elevation, \(e\), of a mountain resulting from thickening of a “normal”, \(h\) = 35 km thick crust and \(L\) = 125 km thick lithosphere, column by a factor \(\beta\)? Assume crustal, mantle and asthenospheric densities of \(\rho_c\) = 2800, \(\rho_m\) = 3200 and \(\rho_a\) = 3150 kg/m\(^3\), respectively.
@@ -442,9 +480,9 @@ What is the elevation, \(e\), of a mountain resulting from thickening of a “no
 \end{sphinxuseclass}\end{sphinxVerbatimInput}
 
 \end{sphinxuseclass}
-\sphinxAtStartPar
-\sphinxstyleemphasis{Solution}:
 
+\subsubsection{Solution}
+\label{\detokenize{exercise-isostasy:solution}}
 \begin{figure}[htbp]
 \centering
 \capstart
@@ -473,6 +511,9 @@ which leads to the following expression for the elevation, \(e\) of the mountain
 \end{sphinxuseclass}\end{sphinxVerbatimInput}
 
 \end{sphinxuseclass}
+\sphinxAtStartPar
+We can plot the value of the elevation, \(e\), as a function of the thickening factor, \(\beta\).
+
 \begin{sphinxuseclass}{cell}\begin{sphinxVerbatimInput}
 
 \begin{sphinxuseclass}{cell_input}
@@ -496,9 +537,9 @@ which leads to the following expression for the elevation, \(e\) of the mountain
 
 
 \section{Thin sheet model}
-\label{\detokenize{thinsheet:thin-sheet-model}}\label{\detokenize{thinsheet::doc}}
+\label{\detokenize{thinsheet:thin-sheet-model}}\label{\detokenize{thinsheet:thin-sheet-section}}\label{\detokenize{thinsheet::doc}}
 \sphinxAtStartPar
-The thin sheet model is based on a simplified version of the Stokes equation that governs the flow of highly viscous (inertia\sphinxhyphen{}free) fluid.
+The thin sheet model is based on a simplified version of the Stokes equation that governs the flow of highly viscous (inertia\sphinxhyphen{}free) fluids.
 
 \sphinxAtStartPar
 It is commonly used to model tectonic processes at the scale of the plates. Its main limitations are that it can only  accurately represents deformation that takes place at a horizontal scale that is larger than the plate thickness and that it uses depth averaged properties for the plate.
@@ -507,15 +548,18 @@ It is commonly used to model tectonic processes at the scale of the plates. Its 
 To derive the equation governing the deformation of a thin viscous plate, we proceed in two steps. First we derive the general form of Stokes equation that governs the flow of a viscous, incompressible and inertia free fluid. Second, we introduce the simplifications that will lead to the thin sheet approximation.
 
 \sphinxAtStartPar
-This procedure is inspired (or is a summarized version of) the derivation given in England and McKenzie (1992).
+This procedure is inspired (or is a summarized version of) the derivation given in England and McKenzie {[}\hyperlink{cite.references:id6}{2}{]}.
 
 \sphinxstepscope
 
 
 \subsection{Stokes flow}
-\label{\detokenize{stokes:stokes-flow}}\label{\detokenize{stokes::doc}}
+\label{\detokenize{stokes:stokes-flow}}\label{\detokenize{stokes:stokes-section}}\label{\detokenize{stokes::doc}}
+
+\subsubsection{Basic equation}
+\label{\detokenize{stokes:basic-equation}}
 \sphinxAtStartPar
-Stokes eqaution is a simplified form of Navier\sphinxhyphen{}Stokes equation that assumes that one can neglect inertial forces (and thus turbulence). It takes the following form:
+Stokes equation is a simplified form of Navier\sphinxhyphen{}Stokes equation that assumes that one can neglect inertial forces (and thus turbulence). It takes the following form:
 \begin{equation}\label{equation:stokes:stokes-force}
 \begin{split}\frac{\partial\tau_{ij}}{\partial x_j}=\frac{\partial p}{\partial x_i}-\rho gz_i\end{split}
 \end{equation}
@@ -524,11 +568,14 @@ where \(\tau_{ij}\) are the compnents of the stress tensor, \(p\) the pressure, 
 
 \begin{sphinxadmonition}{note}{Note:}
 \sphinxAtStartPar
-A Stoke fluid is, by definition, devoid of inertia which implies that if the driving force stops the fluid motion stops instantaneously. Honey behaves like a Stoke fluid: if you stir a honey jar with a spoon, once you remove the spoon, the honey stops moving instantly. This behaviour is also observed in the Earth on geological time scales: it explains why hot spot chains (like the \sphinxhref{https://www.usgs.gov/media/images/hawaiian-emperor-seamount-chain}{Hawaiian\sphinxhyphen{}Emperor seamont chain}) display very abrupt strike changes that correspond to “instantaneous” .
+A Stoke fluid is, by definition, devoid of inertia which implies that if the driving force stops, the fluid motion stops instantaneously. Honey behaves like a Stoke fluid: if you stir a honey jar with a spoon, once you remove the spoon, the honey stops moving instantly. This behaviour is also observed in the Earth on geological time scales: it explains why hot spot chains (like the \sphinxhref{https://www.usgs.gov/media/images/hawaiian-emperor-seamount-chain}{Hawaiian\sphinxhyphen{}Emperor seamont chain}) display very abrupt strike changes that correspond to “instantaneous” changes in plate velocities.
 \end{sphinxadmonition}
 
+
+\subsubsection{Balance of forces}
+\label{\detokenize{stokes:balance-of-forces}}
 \sphinxAtStartPar
-This equation represents the balance between three forces that must exist at any point within the fluid:
+Equation \eqref{equation:stokes:stokes-force} represents the balance between three forces that must exist at any point within the fluid:
 \begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
@@ -553,6 +600,9 @@ Note that this equation does not contain any time dependency. In other words, th
 Stokes flow have interesting properties. One of them is that they are perfectly reversible. This can be appreciated on the \sphinxhref{https://www.youtube.com/watch?v=rA6T83FKuE8}{following video}
 \end{sphinxadmonition}
 
+
+\subsubsection{Incompressibility}
+\label{\detokenize{stokes:incompressibility}}
 \sphinxAtStartPar
 If we wish to use Stokes equation to represent the motion and deformation of plates and flow in the underlying mantle, we must also assume that the flow is incompressible. Mathematically, this is equivalent to assuming that, at every point within the fluid, the divergence of the velocity vector is nil. In other words:
 \begin{equation}\label{equation:stokes:incompressibility}
@@ -561,26 +611,54 @@ If we wish to use Stokes equation to represent the motion and deformation of pla
 \sphinxAtStartPar
 where \(u_i\) are the components of the velocity vector. Note that in this equation as in equation \eqref{equation:stokes:stokes-force}, we have used \sphinxhref{https://en.wikipedia.org/wiki/Einstein\_notation}{Einstein’s notation} which assumes that if an index appears more than once in a single term and is not otherwise defined, it implies summation.
 
+
+\subsubsection{Rheology}
+\label{\detokenize{stokes:rheology}}
 \sphinxAtStartPar
-We see that the first equation \eqref{equation:stokes:stokes-force} refers to stresses (or forces), whereas the second \eqref{equation:stokes:incompressibility} referes to velocities. To combine the two equations, one needs to introduce a rheological law, i.e., a rule that defines the relationship between deformation (velocity) and stress (force). Here we assume a non\sphinxhyphen{}linear viscous behaviour of the form:
+We see that the first equation \eqref{equation:stokes:stokes-force} refers to stresses (or forces), whereas the second \eqref{equation:stokes:incompressibility} referes to velocities. To combine the two equations, one needs to introduce a rheological law or {\hyperref[\detokenize{glossary:term-Rheology}]{\sphinxtermref{\DUrole{xref,std,std-term}{rheology}}}}, i.e., a rule that defines the relationship between deformation (velocity) and stress (force). Here we assume a non\sphinxhyphen{}linear viscous behaviour of the form:
 \begin{equation}\label{equation:stokes:rheology}
-\begin{split}\epsilon_{ij} = B^{-n}T^{n-1}\sigma_{ij}\end{split}
+\begin{split}\dot\epsilon_{ij} = B^{-n}T^{n-1}\sigma_{ij}\end{split}
 \end{equation}
 \sphinxAtStartPar
-where \(\epsilon_{ij}\) is the strain rate tensor, defined from the spatial derivatives of the velocity vector:
+where \(\dot\epsilon_{ij}\) is the strain rate tensor, defined from the spatial derivatives of the velocity vector:
 \begin{equation}\label{equation:stokes:strain-rate}
-\begin{split}\epsilon_{ij}=\frac{1}{2}\Bigl(\frac{\partial u_i}{\partial x_j}+\frac{\partial u_j}{\partial x_i}\Bigr)\end{split}
+\begin{split}\dot\epsilon_{ij}=\frac{1}{2}\Bigl(\frac{\partial u_i}{\partial x_j}+\frac{\partial u_j}{\partial x_i}\Bigr)\end{split}
 \end{equation}
 \sphinxAtStartPar
-\(B\) is a constant and \(n\) an exponent that represents the non\sphinxhyphen{}linearity of the rheological law (the rheology is linear is \(n=1\)). Using values of \(n>1\) implies that the material is strain softening, i.e., its viscosity drops as the strain rate increases. \(T\) is the second invariant of the deviatoric part of the stress tensor. The deviatoric part means that the pressure has been substracted from the diagonal elements of the stress tensor. The second invariant is a special combination of the tensors components that remains invariant in any system of reference (the pressure is the first invariant of the stress tensor). More information on the invariants of a tensor can be found \sphinxhref{https://en.wikipedia.org/wiki/Invariants\_of\_tensors}{here}.
+\(B\) is a constant and \(n\) an exponent that represents the non\sphinxhyphen{}linearity of the rheological law (the rheology is linear is \(n=1\)). Using values of \(n>1\) implies that the material is strain softening, i.e., its viscosity drops as the strain rate increases. \(T\) is the second {\hyperref[\detokenize{glossary:term-Invariant}]{\sphinxtermref{\DUrole{xref,std,std-term}{invariant}}}} of the deviatoric part of the stress tensor. The deviatoric part means that the pressure has been substracted from the diagonal elements of the stress tensor. The second invariant is a special combination of the tensor components that remains invariant in any system of reference (the pressure is the first invariant of the stress tensor). More information on the invariants of a tensor can be found \sphinxhref{https://en.wikipedia.org/wiki/Invariants\_of\_tensors}{here}.
+
+\begin{sphinxadmonition}{note}{Note:}
+\sphinxAtStartPar
+Note that the viscosity of rocks is also a strong (exponential) function of temperature. This is because the temperature inside the Earth varies from 0 near the surface to several thousands of degree in its deep interior.
+
+\begin{figure}[H]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[height=250\sphinxpxdimen]{{temperature-profile}.jpeg}
+\caption{Earth’s internal temperature structure from Steinberger and Calderwood {[}\hyperlink{cite.references:id10}{7}{]}}\label{\detokenize{stokes:temperature-profile}}\end{figure}
+
+\sphinxAtStartPar
+Over that range of temperature (and pressure) values the viscosity of Earth’s material (rocks) varies by many orders of magnitude.
+
+\begin{figure}[H]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[height=250\sphinxpxdimen]{{viscosity-profile}.jpeg}
+\caption{Earth’s internal viscosity structure from Steinberger and Calderwood {[}\hyperlink{cite.references:id10}{7}{]}}\label{\detokenize{stokes:viscosity-profile}}\end{figure}
+\end{sphinxadmonition}
 
 \sphinxstepscope
 
 
 \subsection{Thin sheet approximation}
 \label{\detokenize{approx:thin-sheet-approximation}}\label{\detokenize{approx::doc}}
+
+\subsubsection{Basic assumptions}
+\label{\detokenize{approx:basic-assumptions}}
 \sphinxAtStartPar
-The thin sheet approximation implies:
+The thin sheet approximation is an application of Stokes equation to the behaviour of a thin viscous sheet. It implies:
 \begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
@@ -596,33 +674,1102 @@ that all variables and properties can be approximated by their vertically averag
 \sphinxAtStartPar
 This can be expressed mathematically as:
 \begin{equation*}
-\begin{split}\epsilon_{13}=\epsilon_{31}=\epsilon_{23}=\epsilon_{32}=0\end{split}
+\begin{split}\dot\epsilon_{13}=\dot\epsilon_{31}=\dot\epsilon_{23}=\dot\epsilon_{32}=0\end{split}
 \end{equation*}
 \sphinxAtStartPar
-where the 3rd index corresponds to the vertical component and by integrating Stokes equation along the vertical dimension.
+where the 3rd index corresponds to the vertical component, and by integrating Stokes equation along the vertical dimension.
 
+
+\subsubsection{Thin sheet equation}
+\label{\detokenize{approx:thin-sheet-equation}}
 \sphinxAtStartPar
-This yields:
+Using also the incompressibility condition \sphinxhyphen{} equation\eqref{equation:stokes:incompressibility} \sphinxhyphen{}  that can be expressed in terms of the strain rate components:
+\begin{equation*}
+\begin{split}\dot\epsilon_{33}=-(\dot\epsilon_{11}+\dot\epsilon_{22})\end{split}
+\end{equation*}
+\sphinxAtStartPar
+this yields:
 \begin{equation*}
 \begin{split}B\dot E^{1/n-1}\frac{\dot\epsilon_{ij}}{\partial x_j}+B(1/n-1)\frac{\partial \dot E}{\partial x_j}\dot E^{1/n-2}\dot\epsilon_{ij}=\frac{\partial\bar p}{\partial x_i}\end{split}
 \end{equation*}
 \sphinxAtStartPar
-using the incompressibility (equation\eqref{equation:stokes:incompressibility}) condition that can be expressed in terms of the strin rate components:
-\begin{equation*}
-\begin{split}\epsilon_{33}=-(\epsilon_{11}+\epsilon_{22})\end{split}
-\end{equation*}
-\sphinxAtStartPar
-\(\bar p\) is the vertically averaged pressure:
+where \(\bar p\) is the vertically averaged pressure:
 \begin{equation*}
 \begin{split}\bar p=\frac{1}{L}\int_0^L p\ dz=\frac{g\rho_ch^2}{2L}(1-\rho_c/\rho_m)+\frac{g\rho_mL}{2}\end{split}
 \end{equation*}
 \sphinxAtStartPar
+\(L\) and \(h\) are the lithospheric and crustal thicknesses, respectively, \(\rho_c\) and \(\rho_m\) the crustal and mantle densities and \(\dot E\) is the second {\hyperref[\detokenize{glossary:term-Invariant}]{\sphinxtermref{\DUrole{xref,std,std-term}{invariant}}}} of the strain rate tensor.
+
+
+\subsubsection{Interpretation}
+\label{\detokenize{approx:interpretation}}
+\sphinxAtStartPar
 Combining the last two equations yields:
-\begin{equation*}
+\begin{equation}\label{equation:approx:thinsheet}
 \begin{split}\frac{1}{2}\frac{\partial}{\partial x_j}(\frac{\partial u_j}{\partial x_i}+\frac{\partial u_i}{\partial x_j})=\frac{g\rho_c h}{BL}(1-\rho_c/\rho_m)\dot E^{1-1/n}\frac{\partial h}{\partial x_i}+(1-1/n)\dot E^{-1}\frac{\partial\dot E}{\partial x_j}\dot\epsilon_{ij}\end{split}
-\end{equation*}
+\end{equation}
 \sphinxAtStartPar
 where the indices \(i\) and \(j\) now only vary between 1 and 2.
+
+\sphinxAtStartPar
+In this formulation the pressure gradients arise from lateral variations in density interfaces; it implies that there remain only two forces at play and the equation therefore expresses a balance between viscous and gravitational forces only. The first term in equation\eqref{equation:approx:thinsheet} is the main viscous term, the second the gravitational term and the third term arises from the non\sphinxhyphen{}linearity of the rheology (it drops out when \(n=1\)).
+
+\sphinxstepscope
+
+
+\section{Stream Power Law}
+\label{\detokenize{spl:stream-power-law}}\label{\detokenize{spl:spl-section}}\label{\detokenize{spl::doc}}
+
+\subsection{Basic equation}
+\label{\detokenize{spl:basic-equation}}
+\sphinxAtStartPar
+The Stream Power Law (SPL) or Stream Power Incision Model (SPIM) {[}\hyperlink{cite.references:id3}{3}{]} describes the competition between uplift and river incision to control the amplitude of surface topography. Mathematically it is expressed as:
+\begin{equation}\label{equation:spl:spl}
+\begin{split}\frac{\partial h}{\partial t}=U-K_fA^mS^n\end{split}
+\end{equation}
+\sphinxAtStartPar
+where \(h\) is the elevation of the river bed, \(U\) is tectonic uplift, \(A\) is drainage area, a proxy for water discharge, and \(S\) is slope. \(K_f\) is a rate constant that depends on many parameters including rainfall, lithology or vegetation; \(m\) and \(n\) are exponents. All three are poorly constrained.
+
+\begin{sphinxadmonition}{note}{Note:}
+\sphinxAtStartPar
+A more general version of the SPL assumes that incision by the river is proportional to water discharge, \(\Phi\), which is the integral of the rainfall rate, \(\nu\), over the upstream drainage area, \(A\):
+\begin{equation*}
+\begin{split}\Phi=\int_A\nu\ dA\end{split}
+\end{equation*}
+\sphinxAtStartPar
+It is commonly assumed that rainfall rate is uniform over a catchment, or, more correctly, that variations in rainfall rate occur on a broader scale than that of a single catchment. In that case, the discharge is equal to the product of the drainage aerea \(A\) by the mean rainfall rate, \(\bar\nu\), which justifies the use of catchment area as a proxy for discharge. It also implies that the rate constant \(K_f\) in equation \eqref{equation:spl:spl} contains the mean rainfall rate to the power \(m\), i.e., \(K_f\propto\bar\nu^m\).
+\end{sphinxadmonition}
+
+\sphinxstepscope
+
+
+\subsection{SPL in details}
+\label{\detokenize{spl-details:spl-in-details}}\label{\detokenize{spl-details::doc}}
+
+\subsubsection{Hypotheses}
+\label{\detokenize{spl-details:hypotheses}}
+\sphinxAtStartPar
+Here, inspired by Whipple and Tucker {[}\hyperlink{cite.references:id3}{3}{]}, we provide the details of the derivation of the SPL so that the reader can appreciate the hypotheses and approximations it is based on.
+
+\begin{sphinxuseclass}{sd-tab-set}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{Erosion rate}
+
+\begin{sphinxuseclass}{sd-tab-content}\subsubsection*{Hypothesis}
+
+\sphinxAtStartPar
+Erosion rate is proportional to shear stress exerted by river flow on the bedrock to the power \(a\):
+\begin{equation*}
+\begin{split}\dot\epsilon=k_b\tau_b^a\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Note that this shear stress definition includes the effect of tools carried by the river. It also assumed that there exists no threshold for motion/erosion. See the effect of including a threshold in Deal \sphinxstyleemphasis{et al.} {[}\hyperlink{cite.references:id4}{8}{]}, for example.
+
+\sphinxAtStartPar
+Typical value for \(a\) is 5/2, assuming that the dominant eroding mechanism is abrasion, or 1 for plucking (see Whipple \sphinxstyleemphasis{et al.} {[}\hyperlink{cite.references:id2}{9}{]}).
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{Shear stress}
+
+\begin{sphinxuseclass}{sd-tab-content}\subsubsection*{Hypothesis}
+
+\sphinxAtStartPar
+Conservation of momentum implies that the viscous shear stress is proportional to water depth and slope:
+\begin{equation*}
+\begin{split}\tau_b=\rho g D S=\rho C_fV^2\end{split}
+\end{equation*}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{Discharge}
+
+\begin{sphinxuseclass}{sd-tab-content}\subsubsection*{Hypothesis}
+
+\sphinxAtStartPar
+Discharge is the product of flow velocity, depth and width of the channel:
+\begin{equation*}
+\begin{split}Q = VDW\end{split}
+\end{equation*}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{Channel width}
+
+\begin{sphinxuseclass}{sd-tab-content}\subsubsection*{Hypothesis}
+
+\sphinxAtStartPar
+Channel width varies as a power (\(b\)) of discharge:
+\begin{equation*}
+\begin{split}W=k_wQ^b\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Commonly observed value for \(b\) is 1/2.
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{Drainage area}
+
+\begin{sphinxuseclass}{sd-tab-content}\subsubsection*{Hypothesis}
+
+\sphinxAtStartPar
+Discharge is proportional to drainage area:
+\begin{equation*}
+\begin{split}Q = k_qA^c\end{split}
+\end{equation*}
+\sphinxAtStartPar
+commonly observed value for \(c\) is 1.
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+
+\subsubsection{Combined equation}
+\label{\detokenize{spl-details:combined-equation}}
+\sphinxAtStartPar
+Combining all these relationships leads to the following expression for the erosion rate:
+\begin{equation}\label{equation:spl-details:spl-eps}
+\begin{split}\dot\epsilon=KA^{2ac(1-b)/3}S^{2a/3}=KA^mS^n\end{split}
+\end{equation}
+\sphinxAtStartPar
+and
+\begin{equation*}
+\begin{split}m=2ac(1-b)/3\\
+n=2a/3\\
+m/n = c(1-b)\end{split}
+\end{equation*}
+\sphinxstepscope
+
+
+\subsection{Steady\sphinxhyphen{}state profile}
+\label{\detokenize{spl-solution:steady-state-profile}}\label{\detokenize{spl-solution::doc}}
+
+\subsubsection{Hack’s law}
+\label{\detokenize{spl-solution:hack-s-law}}
+\sphinxAtStartPar
+The Stream Power Law \sphinxhyphen{} equation \eqref{equation:spl:spl} \sphinxhyphen{} requires the computation of the drainage area, \(A\), at every point of the landscape. Hack’s Law {[}\hyperlink{cite.references:id22}{10}{]} state that drainage area varies as a power law of the distance along a stream from the source:
+\begin{equation*}
+\begin{split}A = k(L-x)^p\end{split}
+\end{equation*}
+\sphinxAtStartPar
+where \(x\) is the distance from base level, \(L\) is the length of the river (from base level to the source) and \(k\) and \(p\) are two constants/parameters. The value of these parameters is relatively well constrained {[}\hyperlink{cite.references:id22}{10}, \hyperlink{cite.references:id23}{11}{]}.
+
+
+\subsubsection{Steady\sphinxhyphen{}state equation}
+\label{\detokenize{spl-solution:steady-state-equation}}
+\sphinxAtStartPar
+We can use Hack’s Law to derive from the SPL a differential equation governing the evolution of the river profile:
+\begin{equation*}
+\begin{split}\frac{\partial h}{\partial t}= U -K_f\Bigr(k(L-x)^p\Bigr)^m\Bigl(\frac{\partial h}{\partial x}\Bigr)^n\end{split}
+\end{equation*}
+\sphinxAtStartPar
+If we assume steady\sphinxhyphen{}state, we obtain a simple differential equation:
+\begin{equation*}
+\begin{split}\frac{\partial h}{\partial x}=\Bigl(\frac{U}{K_fk^m}\Bigr)^{1/n}(L-x)^{-mp/n}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+that we can use to predict the steady\sphinxhyphen{}state profile of a river:
+\begin{equation}\label{equation:spl-solution:sol-spl}
+\begin{split}h(x) = h_0\bigl[L^{1-mp/n}-(L-x)^{1-mp/n}\bigr]\end{split}
+\end{equation}
+\sphinxAtStartPar
+where
+\begin{equation*}
+\begin{split}h_0=\Bigl(\frac{U}{K_fk^m}\Bigr)^{1/n}\frac{1}{1-mp/n}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+The total river or basin relief, \(h_r\), i.e., the difference in height between base level and the source of the river, is given by \(h(L)\):
+\begin{equation*}
+\begin{split}h_r=h(L)=h_0L^{1-mp/n}\end{split}
+\end{equation*}
+
+\subsubsection{Dimensionless form}
+\label{\detokenize{spl-solution:dimensionless-form}}
+\sphinxAtStartPar
+If we normalize height by \(h_r\) and distance by \(L\), i.e., \(h'=h/h_r\) and \(x'=x/L\), we can write this solution in its dimensionless form:
+\begin{equation*}
+\begin{split}h'(x')=1-(1-x)^{1-mp/n}\end{split}
+\end{equation*}
+
+\subsubsection{Behaviour}
+\label{\detokenize{spl-solution:behaviour}}
+\sphinxAtStartPar
+We can plot this function for different values of the ratio \(m/n\) assuming a globally averaged value for \(p=1/0.54\). The results are shown in the following cells.
+
+\begin{sphinxuseclass}{cell}\begin{sphinxVerbatimInput}
+
+\begin{sphinxuseclass}{cell_input}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{numpy}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n+nn}{np}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{matplotlib}\PYG{n+nn}{.}\PYG{n+nn}{pyplot}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n+nn}{plt}
+\end{sphinxVerbatim}
+
+\end{sphinxuseclass}\end{sphinxVerbatimInput}
+
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{cell}\begin{sphinxVerbatimInput}
+
+\begin{sphinxuseclass}{cell_input}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{p} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{o}{/}\PYG{l+m+mf}{0.54}
+
+\PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{p}{)}
+
+\PYG{n}{xp} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{linspace}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{101}\PYG{p}{)}
+\PYG{k}{for} \PYG{n}{mn} \PYG{o+ow}{in} \PYG{n}{np}\PYG{o}{.}\PYG{n}{linspace}\PYG{p}{(}\PYG{l+m+mf}{0.3}\PYG{p}{,}\PYG{l+m+mf}{0.5}\PYG{p}{,}\PYG{l+m+mi}{5}\PYG{p}{)}\PYG{p}{:}
+    \PYG{n}{hp} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{o}{\PYGZhy{}}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{o}{\PYGZhy{}}\PYG{n}{xp}\PYG{p}{)}\PYG{o}{*}\PYG{o}{*}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{o}{\PYGZhy{}}\PYG{n}{mn}\PYG{o}{*}\PYG{n}{p}\PYG{p}{)}
+    \PYG{n}{ax}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{xp}\PYG{p}{,}\PYG{n}{hp}\PYG{p}{,}\PYG{n}{label}\PYG{o}{=}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZdl{}m/n=}\PYG{l+s+si}{\PYGZob{}}\PYG{n}{mn}\PYG{l+s+si}{:}\PYG{l+s+s2}{.2f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZdl{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{legend}\PYG{p}{(}\PYG{p}{)}\PYG{p}{;}
+\end{sphinxVerbatim}
+
+\end{sphinxuseclass}\end{sphinxVerbatimInput}
+\begin{sphinxVerbatimOutput}
+
+\begin{sphinxuseclass}{cell_output}
+\noindent\sphinxincludegraphics{{06af18d6b085dcc1c9c5613011f3ae253ce420e46addd1d0931f270e70c8f47f}.png}
+
+\end{sphinxuseclass}\end{sphinxVerbatimOutput}
+
+\end{sphinxuseclass}
+\sphinxAtStartPar
+We see that the “curvature” of the profile is controlled by the ratio \(m/n\), which is therefore refered to as the \sphinxstyleemphasis{concavity} of the river profile. It is easily measurable and many measurements made on river profiles have led to estimates for the ratio \(m/n\) varying between 0.3 and 0.6.
+
+\begin{sphinxadmonition}{warning}{Warning:}
+\sphinxAtStartPar
+In the special case where \(mp/n=1\), the solution given in equation \eqref{equation:spl-solution:sol-spl} is not valid as \(1-mp/n=0\). In this case, we must go back to the equation, which then becomes:
+\begin{equation*}
+\begin{split}\frac{\partial h}{\partial x}=\Bigl(\frac{U}{K_fk^m}\Bigr)^{1/n}\frac{1}{L-x}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+which has the following solution:
+\begin{equation*}
+\begin{split}h(x)=\Bigr(\frac{U}{K_fk^m}\Bigr)^{1/n}\bigl[\log L-\log(L-x)]\end{split}
+\end{equation*}
+\sphinxAtStartPar
+satisfying also the base level boundary condition.
+\end{sphinxadmonition}
+
+\sphinxstepscope
+
+
+\section{Glacial erosion}
+\label{\detokenize{glacial:glacial-erosion}}\label{\detokenize{glacial::doc}}
+
+\subsection{Quaternary climate}
+\label{\detokenize{glacial:quaternary-climate}}
+\sphinxAtStartPar
+The Quaternary is a relatively recent period of the geological past that has seen many parts of the continents, and especailly many mountain belts, being affected by ice sheets and glaciers. This is in response to the slow but steady cooling of the Earth’s climate over the past \(\approx60\) Myrs.
+
+\sphinxAtStartPar
+Quaternary glaciations take place over glacial cycles that are dictated by subtle variations in the Earth’s orbital parameters that are called Milankovitch cycles. They have a period of approximately 20, 40 and 100 kyr. Over the past million years or so, the 100 kyr period has been dominant and this has resulted in large variations in the Earth’s climate with that periodicity. These variations are, however, quite asymmetric with the cooling taking place over 80 kyr while the warming is much more abrupt.
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[height=250\sphinxpxdimen]{{westerhold}.png}
+\caption{Cenozoic Global Reference benthic foraminifer carbon and oxygen isotope dataset (CENOGRID) from ocean drilling core sites spanning the past 66 million years (from Westerhold \sphinxstyleemphasis{et al.} {[}\hyperlink{cite.references:id24}{12}{]})}\label{\detokenize{glacial:westerhold-curve}}\end{figure}
+
+
+\subsection{Evidence for erosion}
+\label{\detokenize{glacial:evidence-for-erosion}}
+\sphinxAtStartPar
+These variations have led to the formation of glaciers in many mountain belts that undergo cycles of growth (and sometimes birth and death) over a period of approximately 100 kyr. In many mountain areas, these glaciers have a wet base and are therefore sliding on the underlying bedrock. This sliding has caused carving of the bedrock by the ice that has given many of the Earth’s current monutain belts a distinct character. This include the formation of U\sphinxhyphen{}shaped valleys, cirques, aretes and hanging valleys.
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[height=150\sphinxpxdimen]{{aletsch}.png}
+\caption{The Aletsch glacier in Switzerland showing the flow of ice and its effect on the underlying bedrock: the formation of a long, U\sphinxhyphen{}shaped valley.}\label{\detokenize{glacial:aletsch-glacier}}\end{figure}
+
+
+\subsection{Chicken and egg debate}
+\label{\detokenize{glacial:chicken-and-egg-debate}}
+\sphinxAtStartPar
+There is an on\sphinxhyphen{}going debate {[}\hyperlink{cite.references:id11}{13}, \hyperlink{cite.references:id12}{14}, \hyperlink{cite.references:id13}{15}{]} on whether the cooling of the Quaternary and the apparition of glaciers in mountain belts has enhanced the “erosional efficiency” of the Earth’s hydrosphere, which in turn, could have caused an uplift of mountain belt by flexural {\hyperref[\detokenize{glossary:term-Isostasy}]{\sphinxtermref{\DUrole{xref,std,std-term}{isostasy}}}}. This debate highlights the need to better understand and quantify the efficiency of glacial erosion and how it compares to that of fluvial erosion. This is one of the reasons why many models of glacial erosion have been developed in recent years. They differ mostly by the way they solve the equation governing the distribution of ice on a landscape.
+
+
+\subsection{Glacial erosion law}
+\label{\detokenize{glacial:glacial-erosion-law}}
+\sphinxAtStartPar
+However, unlike for the Stream Power Law (SPL), a consensus seems to emerge on the value of the parameters representing the glacial erosion law, which implies that the erosion rate that they predict are better calibrated than those derived from the SPL.
+
+\sphinxAtStartPar
+Here we will present the main parameterization for glacial erosion, the various models that have been developed to model ice flow at the Earth’s surface and some of the constraints that we have on the value of the glacial erosion model parameters.
+
+\sphinxstepscope
+
+
+\subsection{Glacial erosion law}
+\label{\detokenize{glacial-erosion:glacial-erosion-law}}\label{\detokenize{glacial-erosion::doc}}
+\sphinxAtStartPar
+The main glacial erosion law that is used in many numerical models assumes that erosion rate is proportional to a power of the sliding velocity:
+\begin{equation}\label{equation:glacial-erosion:glacial}
+\begin{split}\dot\epsilon=K_gu_s^l\end{split}
+\end{equation}
+\sphinxAtStartPar
+where \(\dot\epsilon\) is erosion rate, \(u_s\) the sliding velocity, and \(K_g\) and \(l\) two parameters. This law is derived from the work of Hallet {[}\hyperlink{cite.references:id15}{16}{]} on glacial abrasion.
+
+\sphinxAtStartPar
+The main issue in glacial erosion model is to compute the sliding velocity. For this one must reconstruct the geometry and flow of ice on a given landscape (natural or synthetic). Various approaches have been used as we will now describe.
+
+\sphinxstepscope
+
+
+\subsection{Constraints on erosion law}
+\label{\detokenize{glacial-constraints:constraints-on-erosion-law}}\label{\detokenize{glacial-constraints::doc}}
+\sphinxAtStartPar
+When compared to fluvial erosion, glacial erosion appears, where it is active, i.e., in the vicinity of the ELA, to be less influenced by bedrock lithology. This has led to the believe (justifiably or not) that glacial erosion is dependent on less parameters/factors than fluvial erosion. This should imply that the glacial erosion parameters, \(K_g\) and \(l\) in equation \eqref{equation:glacial-erosion:glacial} take more universal values than their fluvial counterparts.
+
+\sphinxAtStartPar
+This is apparently further jusitified by two independent studies that were published more or less concommitantly. The first {[}\hyperlink{cite.references:id20}{17}{]} compiled erosion rates (using eroded sediment volumes) from a large number of glaciers at different latitudes and compared them to various estimates of glacial sliding velocities. They came up with values of \(10^{-4}\) and 1 for \(K_g\) and \(l\), respectively. The second {[}\hyperlink{cite.references:id21}{18}{]} uses estimates of erosion rates derived from the degree of graphitisation of Carbon in sediments collected in a river flowing off a small glacier in the Southern Alps of New Zeland. These allow to reconstruct where and how fast rocks are eroded beneath the glacier. Using estimates of glacier velocity from repeated satellite imagery, they were able to constrain the erosion law and came up with values of \(10^{-4}\) and 1 for \(K_g\) and \(l\), respectively. The data also suggested anther possible combination of model parameters, i.e., \(2.7\times 10^{-7}\) (m/yr)\(^{1-l}\) and 2, for \(K_g\) and \(l\), respectively.
+
+\sphinxAtStartPar
+The close match between the two estimates (for \(l=1\)) as well as the range of environments and glacier size that these two studies considered is clearly a strong argument for the existence of a “global” or “generic” glacial erosion law that can be used in numerical models.
+
+\sphinxstepscope
+
+
+\subsection{Ice models}
+\label{\detokenize{glacial-models:ice-models}}\label{\detokenize{glacial-models::doc}}
+
+\subsubsection{Ice flow}
+\label{\detokenize{glacial-models:ice-flow}}
+\sphinxAtStartPar
+Ice mechanical behaviour is best represented by a non\sphinxhyphen{}linear form of {\hyperref[\detokenize{stokes:stokes-section}]{\sphinxcrossref{\DUrole{std,std-ref}{Stokes equation}}}}. The main difficulty in solving (or using) this equation arises from the non\sphinxhyphen{}linear rheological behaviour of ice that follows a power law (like rocks) with an exponent close to 3. Ice can be considered to be incompressible.
+
+
+\subsubsection{Mass conservation}
+\label{\detokenize{glacial-models:mass-conservation}}
+\sphinxAtStartPar
+Solving the problem of the flow of ice on a landscape is therefore equivalent to solving Stokes equation on a highly irregular geometry (the basal boundary condition is the bedrock geometry). Note, however, that the mass conservation equation that expresses the incompressibility has been “enriched” with a source term that represents the processus of snow/ice accumulation and ablation. Indeed, the dynamics of a glacier is controlled by climate. In high altitude regions (or in the \sphinxstyleemphasis{accumulation zone}) precipitation leads to accumulation of ice on the glacier. In low altitude region (or in the \sphinxstyleemphasis{ablation zone}), melting and sublimation lead to a loss of ice. The altitude where accumulation and ablation perfectly balance eqch other is called the \sphinxstyleemphasis{Equilibrium Line Altitude} (ELA).
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[height=300\sphinxpxdimen]{{ice-balance}.png}
+\caption{from Siegert {[}\hyperlink{cite.references:id19}{19}{]}}\label{\detokenize{glacial-models:ice-balance}}\end{figure}
+
+
+\subsubsection{Shallow ice}
+\label{\detokenize{glacial-models:shallow-ice}}
+\sphinxAtStartPar
+The shallow ice approximation {[}\hyperlink{cite.references:id16}{20}{]} was the most commonly used approximation to model ice flow and was incorporated in various glacial erosion models {[}\hyperlink{cite.references:id14}{21}{]}. It is similar to the {\hyperref[\detokenize{thinsheet:thin-sheet-section}]{\sphinxcrossref{\DUrole{std,std-ref}{thin\sphinxhyphen{}sheet}}}} approximation. It was first developed to model ice sheets and is therefore not ideally suited to represent the flow of ice on a high relief, mountaineous topography, as it assumes that horizontal gradients in ice thickness must be small (or on a scale much larger than the ice thickness). This model cannot be used to reproduce details of glacial landscapes such as U\sphinxhyphen{}shaped valleys, unless it includes a constriction factor {[}\hyperlink{cite.references:id14}{21}{]}.
+
+
+\subsubsection{iSOSIA}
+\label{\detokenize{glacial-models:isosia}}
+\sphinxAtStartPar
+A higher\sphinxhyphen{}order approximation (iSOSIA) has become quite popular {[}\hyperlink{cite.references:id17}{22}{]}. It produces ice velocities that are much more realistic and in phase with the underlying complex topography, and, consequently, the erosion that it predicts through the glacial erosion law \eqref{equation:glacial-erosion:glacial} produces much more realistic landscape features such as U\sphinxhyphen{}shaped valleys, aretes and cirques. However, it is much more computationally demanding and relatively unstable such that it is not well suited to be coupled to tectonic models.
+
+
+\subsubsection{Deep learning}
+\label{\detokenize{glacial-models:deep-learning}}
+\sphinxAtStartPar
+More recently, the use of mahcine learning methods to solve Stokes equation have greatly sped up the computation of ice geometry {[}\hyperlink{cite.references:id18}{23}{]} and most of the current simulations are now performed using this new technique.
+
+\sphinxstepscope
+
+
+\section{Dimensionless numbers}
+\label{\detokenize{dimension:dimensionless-numbers}}\label{\detokenize{dimension:dimension-section}}\label{\detokenize{dimension::doc}}
+\sphinxAtStartPar
+{\hyperref[\detokenize{glossary:term-Dimensionless-number}]{\sphinxtermref{\DUrole{xref,std,std-term}{Dimensionless number}}}}s are derived from the coefficients of a PDE ({\hyperref[\detokenize{glossary:term-Partial-differential-equation}]{\sphinxtermref{\DUrole{xref,std,std-term}{partial differential equation}}}}) and its boundary conditions. They correspond to ratios of two or more processes represented by the equation. Their derivation requires the definition of dimensionless variables and quantities.
+
+\sphinxAtStartPar
+To illustrate how they are derived from the equation and how useful they are to quantify the behaviour of the equation, I present here an example using the heat diffusion advection equation.
+
+\sphinxstepscope
+
+
+\subsection{Diffusion\sphinxhyphen{}advection equation}
+\label{\detokenize{diffusion-advection:diffusion-advection-equation}}\label{\detokenize{diffusion-advection::doc}}
+
+\subsubsection{Basic equation}
+\label{\detokenize{diffusion-advection:basic-equation}}
+\sphinxAtStartPar
+The partial differential equation (PDE) governing the one\sphinxhyphen{}dimensional, transient transport of heat by diffusion (conduction) and advection is:
+\begin{equation}\label{equation:diffusion-advection:heat}
+\begin{split}\frac{\partial T}{\partial t}-u_0\frac{\partial T}{\partial z}=K\frac{\partial^2T}{\partial z^2}\end{split}
+\end{equation}
+\sphinxAtStartPar
+where \(T\) is temperature, \(u_0\) the velocity at which the material moves with respect to the model boundaries \sphinxhyphen{} in our case we will consider that this is an erosion velocity or rate, i.e., \(u_0=\dot\epsilon\) in equation \eqref{equation:spl-details:spl-eps} \sphinxhyphen{} \(K\) is the thermal diffusivity and \(z\) and \(t\) are depth and time, respectively.
+
+\begin{sphinxadmonition}{note}{Note:}
+\sphinxAtStartPar
+Note that because we are interested in erosion, the velocity of rocks towards the surface is in the opposite direction to that of increasing depth, \(z\). This is the reason why the advection term is negative.
+\end{sphinxadmonition}
+
+
+\subsubsection{Boundary conditions}
+\label{\detokenize{diffusion-advection:boundary-conditions}}
+\sphinxAtStartPar
+To this PDE, one must associate two boundary conditions, one at the surface (\(z=0\)) and one at a depth \(L\) that corresponds to the thickness of the layer being eroded towards the surface:
+\begin{equation}\label{equation:diffusion-advection:heat-bc}
+\begin{split}T(z=0)=0 \textrm{ and }T(z=L)=T_L\end{split}
+\end{equation}
+\sphinxAtStartPar
+In this particular case, it is assumed that the temperature is fixed at \(L\), but one could use a constant heat flux boundary condition that would impose a value on the temperature gradient, \(dT/dz\), rather than the temperature.
+
+\sphinxAtStartPar
+Because it is a transient (evolution) equation, one also needs to impose an initial condition, i.e., a temperature distribution with depth at a reference time (\(t=0\) in our case).
+\begin{equation*}
+\begin{split}T(t=0)=T_0(z)\end{split}
+\end{equation*}
+\sphinxAtStartPar
+The need for boundary and initial conditions arise from the fact that the equation is a \sphinxstyleemphasis{differential} equation meaning that it only informs us on the rate of change (in space or time) of the solution, not on its absolute value. There is therefore a need to \sphinxstyleemphasis{fix} the solution in space and time (or give some reference values for the solution) so that an obsolute value can be derived from the equation.
+
+
+\subsubsection{Dimensionless variables}
+\label{\detokenize{diffusion-advection:dimensionless-variables}}
+\sphinxAtStartPar
+To define dimensionless numbers, one needs to introduce dimensionless variables. To do so we use the initial and boundary conditions:
+\begin{equation*}
+\begin{split}z'=z/L,\ T'=T/T_L,\ t'=t/\tau\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Note that we have introduced an arbitrary time scale, \(\tau\). We will see later how it can be defined.
+
+
+\subsubsection{Dimensionless equation}
+\label{\detokenize{diffusion-advection:dimensionless-equation}}
+\sphinxAtStartPar
+If we introduce these dimensionless variables in the equation, we obtain the dimensionless form of the equation:
+\begin{equation*}
+\begin{split}\frac{T_L}{\tau}\frac{\partial T'}{\partial t'}-u_0\frac{T_L}{L}\frac{\partial T'}{\partial z'}=K\frac{T_L}{L^2}\frac{\partial^2T'}{\partial z'^2}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+or
+\begin{equation*}
+\begin{split}\frac{\partial T'}{\partial t'}-\frac{u_0\tau}{L}\frac{\partial T'}{\partial z'}=\frac{K\tau}{L^2}\frac{\partial^2T'}{\partial z'^2}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Here we see that two choices are available for \(\tau\) that would simplify this expression even more. We can use \(\tau=L/u_0\), which would lead to:
+\begin{equation*}
+\begin{split}\frac{\partial T'}{\partial t'}-\frac{\partial T'}{\partial z'}=\frac{K}{Lu_0}\frac{\partial^2T'}{\partial z'^2}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+or use \(\tau=L^2/K\), which would lead to:
+\begin{equation*}
+\begin{split}\frac{\partial T'}{\partial t'}+\frac{Lu_0}{K}\frac{\partial T'}{\partial z'}=\frac{\partial^2T'}{\partial z'^2}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+In both cases we see appear the ratio \(Lu_0/K\). This is the dimensionless number, called the Péclet number (\(\mathbf{Pe}\)) defined as:
+\begin{equation*}
+\begin{split}\mathbf{Pe}=\frac{Lu_0}{K}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+which leads to the following dimensionless form of the equation:
+\begin{equation}\label{equation:diffusion-advection:heat-nodim}
+\begin{split}\frac{\partial T'}{\partial t'}-\mathbf{Pe}\frac{\partial T'}{\partial z'}=\frac{\partial^2T'}{\partial z'^2}\end{split}
+\end{equation}
+
+\subsubsection{Péclet number}
+\label{\detokenize{diffusion-advection:peclet-number}}
+\sphinxAtStartPar
+Note that the Péclet number can also be regarded as the ratio of two time scales:
+\begin{equation*}
+\begin{split}\mathbf{Pe}=\frac{Lu_0}{K}=\frac{\tau_c}{\tau_a}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+with
+\begin{equation*}
+\begin{split}\tau_c=\frac{L^2}{K}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+the conductive (or diffusion) time scale and
+\begin{equation*}
+\begin{split}\tau_a=\frac{L}{u_0}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+the advection time scale.
+
+\sphinxAtStartPar
+We see that the value of the Péclet number determines the behaviour of this solution. If \(\mathbf{Pe}<<1\), the second term of the equation becomes negligible; advection does not contribute to the transport of heat. Conversely, if \(\mathbf{Pe}>>1\), advection dominates.
+
+\sphinxAtStartPar
+To further illustrate the use of this dimensionless number, I will now derive the steady\sphinxhyphen{}state solution to the above equation and demonstrate how it can be expressed in terms of a single parameter, namely, the Péclet number.
+
+\sphinxstepscope
+
+
+\subsection{Steady\sphinxhyphen{}state solution}
+\label{\detokenize{solution:steady-state-solution}}\label{\detokenize{solution::doc}}
+
+\subsubsection{Dimensionless equation}
+\label{\detokenize{solution:dimensionless-equation}}
+\sphinxAtStartPar
+The steady\sphinxhyphen{}state form of the heat diffusion\sphinxhyphen{}advection equation is obtained by setting the transient term to 0 in the dimensionless equation\eqref{equation:diffusion-advection:heat-nodim}:
+\begin{equation*}
+\begin{split}-\mathbf{Pe}\frac{\partial T'}{\partial z'}=\frac{\partial^2T'}{\partial z'^2}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+This equation has the following general solution:
+\begin{equation*}
+\begin{split}T'=C_1e^{-\mathbf{Pe}z'}+C_2\end{split}
+\end{equation*}
+\sphinxAtStartPar
+We can use the boundary conditions from equation \eqref{equation:diffusion-advection:heat-bc} to determine the values of the two arbitrary constants, \(C_1\) and \(C_2\), to obtain:
+\begin{equation*}
+\begin{split}T'(z')=\frac{1-e^{-\mathbf{Pe}z'}}{1-e^{-\mathbf{Pe}}}\end{split}
+\end{equation*}
+
+\subsubsection{Behaviour}
+\label{\detokenize{solution:behaviour}}
+\sphinxAtStartPar
+Let’s see what this solution looks like for different values of the Péclet number, \(\mathbf{Pe}\).
+
+\begin{sphinxuseclass}{cell}\begin{sphinxVerbatimInput}
+
+\begin{sphinxuseclass}{cell_input}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{numpy}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n+nn}{np}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{matplotlib}\PYG{n+nn}{.}\PYG{n+nn}{pyplot}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n+nn}{plt}
+\end{sphinxVerbatim}
+
+\end{sphinxuseclass}\end{sphinxVerbatimInput}
+
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{cell}\begin{sphinxVerbatimInput}
+
+\begin{sphinxuseclass}{cell_input}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{fig}\PYG{p}{,}\PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{4}\PYG{p}{,}\PYG{l+m+mi}{6}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{n}{Pe\PYGZus{}range} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{linspace}\PYG{p}{(}\PYG{l+m+mf}{1e\PYGZhy{}10}\PYG{p}{,}\PYG{l+m+mi}{10}\PYG{p}{,}\PYG{l+m+mi}{11}\PYG{p}{)}
+\PYG{n}{zp} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{linspace}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{101}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{yaxis}\PYG{o}{.}\PYG{n}{set\PYGZus{}inverted}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+sa}{r}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZdl{}T}\PYG{l+s+s2}{\PYGZsq{}}\PYG{l+s+s2}{\PYGZdl{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+sa}{r}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZdl{}z}\PYG{l+s+s2}{\PYGZsq{}}\PYG{l+s+s2}{\PYGZdl{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+
+\PYG{k}{for} \PYG{n}{Pe} \PYG{o+ow}{in} \PYG{n}{Pe\PYGZus{}range}\PYG{p}{:}
+    \PYG{n}{ax}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{o}{\PYGZhy{}}\PYG{n}{np}\PYG{o}{.}\PYG{n}{exp}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{n}{Pe}\PYG{o}{*}\PYG{n}{zp}\PYG{p}{)}\PYG{p}{)}\PYG{o}{/}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{o}{\PYGZhy{}}\PYG{n}{np}\PYG{o}{.}\PYG{n}{exp}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{n}{Pe}\PYG{p}{)}\PYG{p}{)}\PYG{p}{,} \PYG{n}{zp}\PYG{p}{,} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZdl{}Pe=}\PYG{l+s+si}{\PYGZob{}}\PYG{n}{Pe}\PYG{l+s+si}{:}\PYG{l+s+s2}{.0f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZdl{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{legend}\PYG{p}{(}\PYG{p}{)}\PYG{p}{;}
+\end{sphinxVerbatim}
+
+\end{sphinxuseclass}\end{sphinxVerbatimInput}
+\begin{sphinxVerbatimOutput}
+
+\begin{sphinxuseclass}{cell_output}
+\noindent\sphinxincludegraphics{{c409eac34235c053af6b8980fab3b70cba96e81ba4ec8f16ac7da71c9c40e8cb}.png}
+
+\end{sphinxuseclass}\end{sphinxVerbatimOutput}
+
+\end{sphinxuseclass}
+\sphinxAtStartPar
+We see that, when expressed in terms of dimensionless variables (\(z'\) and \(T'\)), the solution only depends on \(\mathbf{Pe}\).
+
+\sphinxAtStartPar
+Furthermore, for \(\mathbf{Pe}=0\), the solution is linear or equal to the purely diffusive (conductive) equation; whereas, for large values of \(\mathbf{Pe}\), the solution is made of two parts: a quasi\sphinxhyphen{}isothermal part from the basal boundary condition upward, and a part near the surface where the temperature decreases very rapidly. The temperature history of a particle of rock traveling through this layer at a constant velocity \(u_0=\dot\epsilon\) will be made of a long isothermal decompression followed by a very rapid cooling near the surface.
+
+\sphinxstepscope
+
+
+\chapter{Hypothesis 1}
+\label{\detokenize{hypothesis1:hypothesis-1}}\label{\detokenize{hypothesis1::doc}}
+\sphinxAtStartPar
+The first hypothesis that we will consider here on what controls the height of mountain belts can be found/summarized in the paper by England and McKenzie {[}\hyperlink{cite.references:id6}{2}{]}.
+
+\begin{figure}[htbp]
+\centering
+
+\noindent\sphinxincludegraphics[height=800\sphinxpxdimen]{{england-mckenzie-page}.png}
+\end{figure}
+
+\sphinxAtStartPar
+This hypothesis is derived from a {\hyperref[\detokenize{thinsheet:thin-sheet-section}]{\sphinxcrossref{\DUrole{std,std-ref}{thin\sphinxhyphen{}sheet model}}}} that the authors developed to represent the large\sphinxhyphen{}scale deformation of the continental {\hyperref[\detokenize{glossary:term-Lithosphere}]{\sphinxtermref{\DUrole{xref,std,std-term}{lithosphere}}}} during continental collision and applied to the Indian\sphinxhyphen{}Asian collision and the formation of the Hymalayas and Tibetan plateau.
+
+\begin{sphinxadmonition}{note}{To help you in your reading, here are a few hints}
+
+\begin{sphinxuseclass}{sd-tab-set}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{Argand number}
+
+\begin{sphinxuseclass}{sd-tab-content}
+\sphinxAtStartPar
+The authors use the partial differential equation representing the viscous deformation of the {\hyperref[\detokenize{glossary:term-Lithosphere}]{\sphinxtermref{\DUrole{xref,std,std-term}{lithosphere}}}} to derive a {\hyperref[\detokenize{dimension:dimension-section}]{\sphinxcrossref{\DUrole{std,std-ref}{dimensionless number}}}}, the Argand number, \(\mathbf{Ar}\). Can you understand the way it has been derived? Can you explain what it measures?
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{Non\sphinxhyphen{}linear rheology}
+
+\begin{sphinxuseclass}{sd-tab-content}
+\sphinxAtStartPar
+The authors also stress the importance of the non\sphinxhyphen{}linearity of the {\hyperref[\detokenize{glossary:term-Rheology}]{\sphinxtermref{\DUrole{xref,std,std-term}{rheology}}}} they use. How is it parameterized? What happens if the rheology is linear?
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{Main results}
+
+\begin{sphinxuseclass}{sd-tab-content}
+\sphinxAtStartPar
+Can you list the main results of the papers in a few dot points? Can you associate a figure to each of these findings?
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{Himalayas}
+
+\begin{sphinxuseclass}{sd-tab-content}
+\sphinxAtStartPar
+How does the model results compare to the Himalayas + Tibetan plateau system? What can be inferred from this comparison concerning the {\hyperref[\detokenize{glossary:term-Rheology}]{\sphinxtermref{\DUrole{xref,std,std-term}{rheology}}}} of the lithosphere? The value of the Argand number?
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{Contribution}
+
+\begin{sphinxuseclass}{sd-tab-content}
+\sphinxAtStartPar
+What is the contribution of this paper to the debate concerning the height of mountain belts? What is the main hypothesis that they contribute to? Can you complete the following statement:
+\begin{quote}
+
+\sphinxAtStartPar
+According to England and McKenzie {[}\hyperlink{cite.references:id6}{2}{]}, the height of mountain belts is controlled by …
+\end{quote}
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}\end{sphinxadmonition}
+
+\sphinxstepscope
+
+
+\chapter{Hypothesis 2}
+\label{\detokenize{hypothesis2:hypothesis-2}}\label{\detokenize{hypothesis2::doc}}
+\sphinxAtStartPar
+The second hypothesis is explained in the paper by Whipple and Tucker {[}\hyperlink{cite.references:id3}{3}{]}.
+
+\begin{figure}[htbp]
+\centering
+
+\noindent\sphinxincludegraphics[height=800\sphinxpxdimen]{{whipple-tucker-page}.png}
+\end{figure}
+
+\sphinxAtStartPar
+This hypothesis is derived from the behaviour (and the solution) of a partial differential equation governing river incision in bedrock in a region experiencing uniform uplift. This article describes how the equation (the {\hyperref[\detokenize{spl:spl-section}]{\sphinxcrossref{\DUrole{std,std-ref}{Stream Power Law}}}}) is derived but also its implications for the height of mountain belts.
+
+\begin{sphinxadmonition}{note}{To help you in your reading, here are a few hints}
+
+\begin{sphinxuseclass}{sd-tab-set}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{Erosion number}
+
+\begin{sphinxuseclass}{sd-tab-content}
+\sphinxAtStartPar
+The authors use the Stream Power Incision Model (SPIM) \sphinxhyphen{} or Stream Power Law (SPL) \sphinxhyphen{} to derive a {\hyperref[\detokenize{dimension:dimension-section}]{\sphinxcrossref{\DUrole{std,std-ref}{dimensionless number}}}}, the Erosion number, \(\mathbf{N_E}\). Can you understand the way it has been derived? Can you explain what it measures?
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{River profiles}
+
+\begin{sphinxuseclass}{sd-tab-content}
+\sphinxAtStartPar
+What is Hack’s law? What is the “canonic” shape of a steady\sphinxhyphen{}state river profile resulting from the balance between tectonic uplift and river erosion? What does it depend on?
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{Knick points}
+
+\begin{sphinxuseclass}{sd-tab-content}
+\sphinxAtStartPar
+What is a knick point? Is it observed in nature? Can it be explained by the SPL? How does it propagates?
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{Contribution}
+
+\begin{sphinxuseclass}{sd-tab-content}
+\sphinxAtStartPar
+What is the contribution of this paper to the debate concerning the height of mountain belts? What is the main hypothesis that they contribute to? Can you complete the following statement:
+\begin{quote}
+
+\sphinxAtStartPar
+According to Whipple and Tucker {[}\hyperlink{cite.references:id3}{3}{]}, the height of mountain belts is controlled by …
+\end{quote}
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}\end{sphinxadmonition}
+
+\sphinxstepscope
+
+
+\chapter{Hypothesis 3}
+\label{\detokenize{hypothesis3:hypothesis-3}}\label{\detokenize{hypothesis3::doc}}
+\sphinxAtStartPar
+The third hypothesis is explained in the paper by Wolf \sphinxstyleemphasis{et al.} {[}\hyperlink{cite.references:id7}{4}{]}.
+
+\begin{figure}[htbp]
+\centering
+
+\noindent\sphinxincludegraphics[height=800\sphinxpxdimen]{{wolf-etal-page}.png}
+\end{figure}
+
+\sphinxAtStartPar
+This hypothesis is derived from the results obtained by coupling a sophisticated thermo\sphinxhyphen{}mechanical model of the {\hyperref[\detokenize{glossary:term-Lithosphere}]{\sphinxtermref{\DUrole{xref,std,std-term}{lithosphere}}}} and underlying mantle solving the {\hyperref[\detokenize{stokes:stokes-section}]{\sphinxcrossref{\DUrole{std,std-ref}{Stokes equation}}}}, to a landscape evolution model solving the {\hyperref[\detokenize{spl:spl-section}]{\sphinxcrossref{\DUrole{std,std-ref}{Stream Power Law}}}} (SPL). The results are interpreted by introducing a dimensionless number, the Beaumont number, \(\mathbf{Bm}\).
+
+\begin{sphinxadmonition}{note}{To help you in your reading, here are a few hints}
+
+\begin{sphinxuseclass}{sd-tab-set}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{Results}
+
+\begin{sphinxuseclass}{sd-tab-content}
+\sphinxAtStartPar
+Can you briefly describe the differences between the three main model runs presented in the article? What are the main differences in terms of model input parameters? What differences do they lead to in the results?
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{Beaumont number}
+
+\begin{sphinxuseclass}{sd-tab-content}
+\sphinxAtStartPar
+What is the expression of the Beaumont number? Is it derived from a single equation? What does it represent?
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{Orogen types}
+
+\begin{sphinxuseclass}{sd-tab-content}
+\sphinxAtStartPar
+The authors arrive at a classification of orogens into three types? What are their respective characteristics?
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{Active orogens}
+
+\begin{sphinxuseclass}{sd-tab-content}
+\sphinxAtStartPar
+How can one determine the value of the Beaumont number of a (real) active orogen? Can you give an example of a typical representative of each of the three types of orogens?
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{Contribution}
+
+\begin{sphinxuseclass}{sd-tab-content}
+\sphinxAtStartPar
+What is the contribution of this paper to the debate concerning the height of mountain belts? How does the classification in three orogen types helps the debate? Can you complete the following statement:
+\begin{quote}
+
+\sphinxAtStartPar
+According to Wolf \sphinxstyleemphasis{et al.} {[}\hyperlink{cite.references:id7}{4}{]}, the height of mountain belts is controlled by …
+\end{quote}
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}\end{sphinxadmonition}
+
+\sphinxstepscope
+
+
+\chapter{Hypothesis 4}
+\label{\detokenize{hypothesis4:hypothesis-4}}\label{\detokenize{hypothesis4::doc}}
+\sphinxAtStartPar
+The fourth hypothesis is explained in the paper by Egholm \sphinxstyleemphasis{et al.} {[}\hyperlink{cite.references:id8}{5}{]}.
+
+\begin{figure}[htbp]
+\centering
+
+\noindent\sphinxincludegraphics[height=800\sphinxpxdimen]{{egholm-etal-page}.png}
+\end{figure}
+
+\sphinxAtStartPar
+This hypothesis is derived from the results obtained by using a model for glacial erosion and comparing its predictions and in particular hypsometric distributions to global topographic data.
+
+\begin{sphinxadmonition}{note}{To help you in your reading, here are a few hints}
+
+\begin{sphinxuseclass}{sd-tab-set}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{Buzzsaw}
+
+\begin{sphinxuseclass}{sd-tab-content}
+\sphinxAtStartPar
+What is the \sphinxstyleemphasis{buzzsaw hypothesis}? What is the \sphinxstyleemphasis{Equilibrium Line Altitude} (ELA)?
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{Model results}
+
+\begin{sphinxuseclass}{sd-tab-content}
+\sphinxAtStartPar
+What is the model main prediction used in this paper?
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{Comparison to data}
+
+\begin{sphinxuseclass}{sd-tab-content}
+\sphinxAtStartPar
+What is the main observation made by the authors? In which figure is it presented? How does it compare to the model results? What are the implications of this?
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{Sierra Nevada}
+
+\begin{sphinxuseclass}{sd-tab-content}
+\sphinxAtStartPar
+The authors present the results of a model run using a topography derived from the Sierra Nevada. Why? What do they try to illustrate with this? Do they succeed?
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{Contribution}
+
+\begin{sphinxuseclass}{sd-tab-content}
+\sphinxAtStartPar
+What is the contribution of this paper to the debate concerning the height of mountain belts? Is glacial erosion important? Can you complete the following statement:
+\begin{quote}
+
+\sphinxAtStartPar
+According to Egholm \sphinxstyleemphasis{et al.} {[}\hyperlink{cite.references:id8}{5}{]}, the height of mountain belts is controlled by …
+\end{quote}
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}\end{sphinxadmonition}
+
+\sphinxstepscope
+
+
+\chapter{Debate}
+\label{\detokenize{debate:debate}}\label{\detokenize{debate::doc}}
+\sphinxAtStartPar
+At this point you must have a clearer picture on how the four papers you have read contribute to the debate on the control of mountain topography on Earth. You should be ready to synthesize this in a short paper/presentation. To help you in this endeavour, I provide you here with a few hints.
+
+\begin{sphinxadmonition}{note}{Tips}
+
+\begin{sphinxuseclass}{sd-tab-set}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{Contradictions}
+
+\begin{sphinxuseclass}{sd-tab-content}
+\sphinxAtStartPar
+Are they obvious contradictions between the four papers? To answer this question, analyze the papers by pairs and see if their main conclusions are compatible?
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{Hypotheses}
+
+\begin{sphinxuseclass}{sd-tab-content}
+\sphinxAtStartPar
+Can these contradictions be explained by differences in hypotheses made by the authors? Are they all justified? Are some hypotheses better than others? Are there some that are better adapted to given circumstances or environments?
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{Cross\sphinxhyphen{}reference}
+
+\begin{sphinxuseclass}{sd-tab-content}
+\sphinxAtStartPar
+Is there cross\sphinxhyphen{}referencing among the papers? Do you see a temporal evolution or a “history” about the debate?
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{Future work}
+
+\begin{sphinxuseclass}{sd-tab-content}
+\sphinxAtStartPar
+Can you think of a logical study that could be done to contribute to the debate? or potentially resolve it? Think of your reading as a preparatory phase for you writing a grant for a new project that you want to get funding for. What would be that project’s abstract?
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{sd-tab-item}\subsubsection*{Models}
+
+\begin{sphinxuseclass}{sd-tab-content}
+\sphinxAtStartPar
+To perform that future/additional work or address the debate, is there an obvious model that should be used or developed? What would you test with it?
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}\end{sphinxadmonition}
+
+\sphinxstepscope
+
+
+\chapter{Additional reading}
+\label{\detokenize{reading:additional-reading}}\label{\detokenize{reading::doc}}
+\sphinxAtStartPar
+Following is a list of papers that also address the question of the height of mountain belts that you may wish to read or consult.
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+Willett et al, 2001. \sphinxstyleemphasis{Uplift, shortening, and steady\sphinxhyphen{}state topography in active mountain belts.} {[}\hyperlink{cite.references:id25}{24}{]}
+
+\item {} 
+\sphinxAtStartPar
+Dielforder et al, 2020. \sphinxstyleemphasis{Megathrust shear force controls mountain height at convergent plate margins.} {[}\hyperlink{cite.references:id26}{25}{]}
+
+\item {} 
+\sphinxAtStartPar
+Willett, 1999, \sphinxstyleemphasis{Orogeny and orography: The effects of erosion on the structure of mountain belts.} {[}\hyperlink{cite.references:id27}{26}{]}
+
+\item {} 
+\sphinxAtStartPar
+Koons, 1989, \sphinxstyleemphasis{The topographic evolution of collisional mountain belts; a numerical look at the Southern Alps, New Zealand.} {[}\hyperlink{cite.references:id28}{27}{]}
+
+\item {} 
+\sphinxAtStartPar
+Whipple et al, 1999, \sphinxstyleemphasis{Geomorphic limits to climate\sphinxhyphen{}induced increases in topographic relief.} {[}\hyperlink{cite.references:id29}{28}{]}
+
+\item {} 
+\sphinxAtStartPar
+Hilley et al, 2019, \sphinxstyleemphasis{Earth’s topographic relief potentially limited by an upper bound on channel steepness.} {[}\hyperlink{cite.references:id30}{29}{]}
+
+\item {} 
+\sphinxAtStartPar
+Vanderhaeghe et al, 2003. \sphinxstyleemphasis{Evolution of orogenic wedges and continental plateaux: insights from crustal thermal–mechanical models overlying subducting mantle lithosphere.} {[}\hyperlink{cite.references:id31}{30}{]}
+
+\item {} 
+\sphinxAtStartPar
+Beaumont et al, 2003. \sphinxstyleemphasis{Himalayan tectonics explained by extrusion of a low\sphinxhyphen{}viscosity crustal channel coupled to focused surface denudation.} {[}\hyperlink{cite.references:id32}{31}{]}
+
+\end{enumerate}
+
+\sphinxstepscope
+
+
+\chapter{Glossary}
+\label{\detokenize{glossary:glossary}}\label{\detokenize{glossary::doc}}\begin{description}
+\sphinxlineitem{Asthenosphere\index{Asthenosphere@\spxentry{Asthenosphere}|spxpagem}\phantomsection\label{\detokenize{glossary:term-Asthenosphere}}}
+\sphinxAtStartPar
+A weak layer located at the base of the lithosphere that lubricates the motion of tectonic plates. It corresponds to the region in the Earth where the geotherm is closest to the solidus. It may be partially molten in places.
+
+\sphinxlineitem{Dimensionless number\index{Dimensionless number@\spxentry{Dimensionless number}|spxpagem}\phantomsection\label{\detokenize{glossary:term-Dimensionless-number}}}
+\sphinxAtStartPar
+Dimensionless number are used by physicists to express or analyze the behaviour of a partial differential equation representing the competition between two or more physical processes, as a function of the equations parameters and boundary conditions. They are always defined as a combination of model parameters, model size or boundary condition values such that they are unitless.
+
+\sphinxlineitem{Dynamic topography\index{Dynamic topography@\spxentry{Dynamic topography}|spxpagem}\phantomsection\label{\detokenize{glossary:term-Dynamic-topography}}}
+\sphinxAtStartPar
+Topography generated by the divergent flow of material in the Earth’s mantle against its uppermost, more rigid layer , the lithosphere. The divergence in flow creates a stress or force that is balanced by the gravitational stress or force caused by the extra topography.
+
+\sphinxlineitem{Flexural isostasy\index{Flexural isostasy@\spxentry{Flexural isostasy}|spxpagem}\phantomsection\label{\detokenize{glossary:term-Flexural-isostasy}}}
+\sphinxAtStartPar
+Based on the assumption that the lithosphere behaves as a thin elastic plate tyhat is capable of supporting some of the horizontal differential stress caused by surface topography variations through bending.
+
+\sphinxlineitem{Geotherm\index{Geotherm@\spxentry{Geotherm}|spxpagem}\phantomsection\label{\detokenize{glossary:term-Geotherm}}}
+\sphinxAtStartPar
+The distribution or variation of temperature as a function of depth in the Earth’s interior.
+
+\sphinxlineitem{Invariant\index{Invariant@\spxentry{Invariant}|spxpagem}\phantomsection\label{\detokenize{glossary:term-Invariant}}}
+\sphinxAtStartPar
+A scalar quantity that is constructed from the components of a tensor and that remains invariant in any system of reference.
+
+\sphinxlineitem{Isostasy\index{Isostasy@\spxentry{Isostasy}|spxpagem}\phantomsection\label{\detokenize{glossary:term-Isostasy}}}
+\sphinxAtStartPar
+A physical principle that is equivalent to Archimede’s principle applied to the Earth lithosphere or crust.
+
+\sphinxlineitem{Lithosphere\index{Lithosphere@\spxentry{Lithosphere}|spxpagem}\phantomsection\label{\detokenize{glossary:term-Lithosphere}}}
+\sphinxAtStartPar
+The uppermost rigid layer of the Earth that has a plate\sphinxhyphen{}like behaviour; its base can be defined by an isotherm, a viscosity or a seismic wave velocity.
+
+\sphinxlineitem{Numerical model\index{Numerical model@\spxentry{Numerical model}|spxpagem}\phantomsection\label{\detokenize{glossary:term-Numerical-model}}}
+\sphinxAtStartPar
+A representation of a physical system through the use of {\hyperref[\detokenize{glossary:term-Partial-differential-equation}]{\sphinxtermref{\DUrole{xref,std,std-term}{partial differential equation}}}}s (PDEs) and their numerical solution, i.e., through the use of techniques that transform the PDEs into algebraic equations that can be solved using a computer.
+
+\sphinxlineitem{Partial differential equation\index{Partial differential equation@\spxentry{Partial differential equation}|spxpagem}\phantomsection\label{\detokenize{glossary:term-Partial-differential-equation}}}
+\sphinxAtStartPar
+A type of equation that combines the various derivatives, i.e., with respect to different variables, of an unknown quantity that describes the behaviour of a physical system. Because it only describes variations in the unknown quantity it must be associated with boundary and initial conditions. It is often abbreviated by the acronym PDE.
+
+\sphinxlineitem{Rheology\index{Rheology@\spxentry{Rheology}|spxpagem}\phantomsection\label{\detokenize{glossary:term-Rheology}}}
+\sphinxAtStartPar
+A relationship between deformation and stress that is used to describe and parameterize the mechanical behavious of a material. Examples of rheologies, include the viscous, elasti or plastic rheologies.
+
+\end{description}
+
+\sphinxstepscope
+
+
+\chapter{References}
+\label{\detokenize{references:references}}\label{\detokenize{references::doc}}
+\begin{sphinxthebibliography}{10}
+\bibitem[1]{references:id5}
+\sphinxAtStartPar
+Jean Braun. The many surface expressions of mantle dynamics. \sphinxstyleemphasis{Nature Geoscience}, 3(12):825–833, 2010. \sphinxhref{https://doi.org/10.1038/ngeo1020}{doi:10.1038/ngeo1020}.
+\bibitem[2]{references:id6}
+\sphinxAtStartPar
+Philip England and Dan McKenzie. A thin viscous sheet model for continental deformation. \sphinxstyleemphasis{Geophysical Journal International}, 70(2):295–321, 1982. \sphinxhref{https://doi.org/10.1111/j.1365-246x.1982.tb04969.x}{doi:10.1111/j.1365\sphinxhyphen{}246x.1982.tb04969.x}.
+\bibitem[3]{references:id3}
+\sphinxAtStartPar
+Kelin X Whipple and Gregory E Tucker. Dynamics of the stream‐power river incision model: implications for height limits of mountain ranges, landscape response timescales, and research needs. \sphinxstyleemphasis{Journal of Geophysical Research: Solid Earth (1978–2012)}, 104(B8):17661–17674, 1999. \sphinxhref{https://doi.org/10.1029/1999jb900120}{doi:10.1029/1999jb900120}.
+\bibitem[4]{references:id7}
+\sphinxAtStartPar
+Sebastian G. Wolf, Ritske S. Huismans, Jean Braun, and Xiaoping Yuan. Topography of mountain belts controlled by rheology and surface processes. \sphinxstyleemphasis{Nature}, 606(7914):516–521, 2022. \sphinxhref{https://doi.org/10.1038/s41586-022-04700-6}{doi:10.1038/s41586\sphinxhyphen{}022\sphinxhyphen{}04700\sphinxhyphen{}6}.
+\bibitem[5]{references:id8}
+\sphinxAtStartPar
+David L Egholm, SB Nielsen, Vivi K Pedersen, and J.\sphinxhyphen{}E. Lesemann. Glacial effects limiting mountain height. \sphinxstyleemphasis{Nature}, 460(7257):884–887, 2009. \sphinxhref{https://doi.org/10.1038/nature08263}{doi:10.1038/nature08263}.
+\bibitem[6]{references:id9}
+\sphinxAtStartPar
+Luce Fleitout and Claude Froidevaux. Tectonics and topography for a lithosphere containing density heterogeneities. \sphinxstyleemphasis{Tectonics}, 1982. \sphinxhref{https://doi.org/10.1029/tc001i001p00021}{doi:10.1029/tc001i001p00021}.
+\bibitem[7]{references:id10}
+\sphinxAtStartPar
+Bernhard Steinberger and Arthur R. Calderwood. Models of large‐scale viscous flow in the earth's mantle with constraints from mineral physics and surface observations. \sphinxstyleemphasis{Geophysical Journal International}, 167(3):1461–1481, 2006. \sphinxhref{https://doi.org/10.1111/j.1365-246x.2006.03131.x}{doi:10.1111/j.1365\sphinxhyphen{}246x.2006.03131.x}.
+\bibitem[8]{references:id4}
+\sphinxAtStartPar
+Eric Deal, Jean Braun, and Gianluca Botter. Understanding the role of rainfall and hydrology in determining fluvial erosion efficiency. \sphinxstyleemphasis{Journal of Geophysical Research: Earth Surface}, 123(4):744–778, 2018. \sphinxhref{https://doi.org/10.1002/2017jf004393}{doi:10.1002/2017jf004393}.
+\bibitem[9]{references:id2}
+\sphinxAtStartPar
+Kelin X. Whipple, Gregory S. Hancock, and Robert S. Anderson. River incision into bedrock: mechanics and relative efficacy of plucking, abrasion, and cavitation. \sphinxstyleemphasis{GSA Bulletin}, 112(3):490–503, 2000. \sphinxhref{https://doi.org/10.1130/0016-7606(2000)112<490:riibma>2.0.co;2}{doi:10.1130/0016\sphinxhyphen{}7606(2000)112<490:riibma>2.0.co;2}.
+\bibitem[10]{references:id22}
+\sphinxAtStartPar
+John T Hack. Studies of longitudinal stream profiles in virginia and mariland. Technical Report 294\sphinxhyphen{}B, United Stets Government Printing Oftice, Washington, 1957.
+\bibitem[11]{references:id23}
+\sphinxAtStartPar
+Chuanqi He, Ci\sphinxhyphen{}Jian Yang, Jens M. Turowski, Richard F. Ott, Jean Braun, Hui Tang, Shadi Ghantous, Xiaoping Yuan, and Gaia Stucky de Quay. A global dataset of the shape of drainage systems. \sphinxstyleemphasis{Earth System Science Data}, 16(2):1151–1166, 2024. \sphinxhref{https://doi.org/10.5194/essd-16-1151-2024}{doi:10.5194/essd\sphinxhyphen{}16\sphinxhyphen{}1151\sphinxhyphen{}2024}.
+\bibitem[12]{references:id24}
+\sphinxAtStartPar
+Thomas Westerhold, Norbert Marwan, Anna Joy Drury, Diederik Liebrand, Claudia Agnini, Eleni Anagnostou, James S. K. Barnet, Steven M. Bohaty, David De Vleeschouwer, Fabio Florindo, Thomas Frederichs, David A. Hodell, Ann E. Holbourn, Dick Kroon, Vittoria Lauretano, Kate Littler, Lucas J. Lourens, Mitchell Lyle, Heiko Pälike, Ursula Röhl, Jun Tian, Roy H. Wilkens, Paul A. Wilson, and James C. Zachos. An astronomically dated record of earth’s climate and its predictability over the last 66 million years. \sphinxstyleemphasis{Science}, 369(6509):1383–1387, 2020. \sphinxhref{https://doi.org/10.1126/science.aba6853}{doi:10.1126/science.aba6853}.
+\bibitem[13]{references:id11}
+\sphinxAtStartPar
+Peter Molnar and Philip England. Late cenozoic uplift of mountain ranges and global climate change: chicken or egg? \sphinxstyleemphasis{Nature}, 1990.
+\bibitem[14]{references:id12}
+\sphinxAtStartPar
+Frédéric Herman, Diane Seward, Pierre G Valla, Andrew Carter, Barry Kohn, Sean D Willett, and Todd A Ehlers. Worldwide acceleration of mountain erosion under a cooling climate. \sphinxstyleemphasis{Nature}, 504(7480):423–6, 2013. \sphinxhref{https://doi.org/10.1038/nature12877}{doi:10.1038/nature12877}.
+\bibitem[15]{references:id13}
+\sphinxAtStartPar
+Taylor F. Schildgen, Pieter A. van der Beek, Hugh D. Sinclair, and Rasmus C. Thiede. Spatial correlation bias in late\sphinxhyphen{}cenozoic erosion histories derived from thermochronology. \sphinxstyleemphasis{Nature}, 559(7712):89–93, 2018. \sphinxhref{https://doi.org/10.1038/s41586-018-0260-6}{doi:10.1038/s41586\sphinxhyphen{}018\sphinxhyphen{}0260\sphinxhyphen{}6}.
+\bibitem[16]{references:id15}
+\sphinxAtStartPar
+Bernard Hallet. A theoretical model of glacial abrasion. \sphinxstyleemphasis{Journal of Glaciology}, 23(89):39–50, 1979. \sphinxhref{https://doi.org/10.3189/s0022143000029725}{doi:10.3189/s0022143000029725}.
+\bibitem[17]{references:id20}
+\sphinxAtStartPar
+Michéle Koppes, Bernard Hallet, Eric Rignot, Jérémie Mouginot, Julia Wellner, and Katherine Boldt. Observed latitudinal variations in erosion as a function of glacier dynamics. \sphinxstyleemphasis{Nature}, 526(7571):100–103, 2015. \sphinxhref{https://doi.org/10.1038/nature15385}{doi:10.1038/nature15385}.
+\bibitem[18]{references:id21}
+\sphinxAtStartPar
+Frédéric Herman, Olivier Beyssac, Mattia Brughelli, Stuart N. Lane, Sébastien Leprince, Thierry Adatte, Jiao Y. Y. Lin, Jean\sphinxhyphen{}Philippe Avouac, and Simon C. Cox. Erosion by an alpine glacier. \sphinxstyleemphasis{Science}, 350(6257):193–195, 2015. \sphinxhref{https://doi.org/10.1126/science.aab2386}{doi:10.1126/science.aab2386}.
+\bibitem[19]{references:id19}
+\sphinxAtStartPar
+Martin J Siegert. \sphinxstyleemphasis{Role of glaciers and ice sheets in climate and the global water cycle}. John Wiley \& Sons, Ltd, 2013. \sphinxhref{https://doi.org/10.1002/0470848944.hsa170}{doi:10.1002/0470848944.hsa170}.
+\bibitem[20]{references:id16}
+\sphinxAtStartPar
+Wouter H Knap, Johannes Oerlemans, and Martin Cabée. Climate sensitivity of the ice cap of king george island, south shetland islands, antarctica. \sphinxstyleemphasis{Annals of Glaciology}, 23:154–159, 1996. \sphinxhref{https://doi.org/10.3189/s0260305500013380}{doi:10.3189/s0260305500013380}.
+\bibitem[21]{references:id14}
+\sphinxAtStartPar
+Jean Braun, Daniel Zwartz, and Jonathan H Tomkin. A new surface\sphinxhyphen{}processes model combining glacial and fluvial erosion. \sphinxstyleemphasis{Annals of Glaciology}, 28:282–290, 1999. \sphinxhref{https://doi.org/10.3189/172756499781821864}{doi:10.3189/172756499781821864}.
+\bibitem[22]{references:id17}
+\sphinxAtStartPar
+David L Egholm, Mads F Knudsen, Chris D Clark, and Jerome E Lesemann. Modeling the flow of glaciers in steep terrains: the integrated second‐order shallow ice approximation (iSOSIA). \sphinxstyleemphasis{Journal of Geophysical Research: Earth Surface (2003–2012)}, 2011. \sphinxhref{https://doi.org/10.1029/2010jf001900}{doi:10.1029/2010jf001900}.
+\bibitem[23]{references:id18}
+\sphinxAtStartPar
+Guillaume Cordonnier, Guillaume Jouvet, Adrien Peytavie, Jean Braun, Marie\sphinxhyphen{}Paule Cani, Bedrich Benes, Eric Galin, Eric Guérin, and James Gain. Forming terrains by glacial erosion. \sphinxstyleemphasis{ACM Transactions on Graphics (TOG)}, 42(4):1–14, 2023. \sphinxhref{https://doi.org/10.1145/3592422}{doi:10.1145/3592422}.
+\bibitem[24]{references:id25}
+\sphinxAtStartPar
+Sean D Willett, Rudy Slingerland, and Niels Hovius. Uplift, shortening, and steady state topography in active mountain belts. \sphinxstyleemphasis{American Journal of Science}, 301(4\sphinxhyphen{}5):455–485, 2001. \sphinxhref{https://doi.org/10.2475/ajs.301.4-5.455}{doi:10.2475/ajs.301.4\sphinxhyphen{}5.455}.
+\bibitem[25]{references:id26}
+\sphinxAtStartPar
+Armin Dielforder, Ralf Hetzel, and Onno Oncken. Megathrust shear force controls mountain height at convergent plate margins. \sphinxstyleemphasis{Nature}, 582(7811):225–229, 2020. \sphinxhref{https://doi.org/10.1038/s41586-020-2340-7}{doi:10.1038/s41586\sphinxhyphen{}020\sphinxhyphen{}2340\sphinxhyphen{}7}.
+\bibitem[26]{references:id27}
+\sphinxAtStartPar
+Sean D Willett. Orogeny and orography: the effects of erosion on the structure of mountain belts. \sphinxstyleemphasis{Journal of Geophysical Research: Solid Earth (1978–2012)}, 104(B12):28957–28981, 1999. \sphinxhref{https://doi.org/10.1029/1999jb900248}{doi:10.1029/1999jb900248}.
+\bibitem[27]{references:id28}
+\sphinxAtStartPar
+Peter O Koons. The topographic evolution of collisional mountain belts; a numerical look at the southern alps, new zealand. \sphinxstyleemphasis{American Journal of Science}, 1989. \sphinxhref{https://doi.org/10.2475/ajs.289.9.1041}{doi:10.2475/ajs.289.9.1041}.
+\bibitem[28]{references:id29}
+\sphinxAtStartPar
+Kelin X Whipple, Eric Kirby, and Simon H Brocklehurst. Geomorphic limits to climate\sphinxhyphen{}induced increases in topographic relief. \sphinxstyleemphasis{Nature}, 401(6748):39–43, 1999. \sphinxhref{https://doi.org/10.1038/43375}{doi:10.1038/43375}.
+\bibitem[29]{references:id30}
+\sphinxAtStartPar
+George E. Hilley, Stephen Porder, Felipe Aron, Curtis W. Baden, Samuel A. Johnstone, Frances Liu, Robert Sare, Aaron Steelquist, and Holly H. Young. Earth’s topographic relief potentially limited by an upper bound on channel steepness. \sphinxstyleemphasis{Nature Geoscience}, 12(10):828–832, 2019. \sphinxhref{https://doi.org/10.1038/s41561-019-0442-3}{doi:10.1038/s41561\sphinxhyphen{}019\sphinxhyphen{}0442\sphinxhyphen{}3}.
+\bibitem[30]{references:id31}
+\sphinxAtStartPar
+Olivier Vanderhaeghe, Sergei Medvedev, Philippe Fullsack, Christopher Beaumont, and Rebecca A Jamieson. Evolution of orogenic wedges and continental plateaux: insights from crustal thermal–mechanical models overlying subducting mantle lithosphere. \sphinxstyleemphasis{Geophysical Journal International}, 153(1):27–51, 2003. \sphinxhref{https://doi.org/10.1046/j.1365-246x.2003.01861.x}{doi:10.1046/j.1365\sphinxhyphen{}246x.2003.01861.x}.
+\bibitem[31]{references:id32}
+\sphinxAtStartPar
+Christopher Beaumont, Rebecca A Jamieson, MH Nguyen, and Bonnie Lee. Himalayan tectonics explained by extrusion of a low\sphinxhyphen{}viscosity crustal channel coupled to focused surface denudation. \sphinxstyleemphasis{Nature}, 2001. \sphinxhref{https://doi.org/10.1038/414738a}{doi:10.1038/414738a}.
+\end{sphinxthebibliography}
 
 
 

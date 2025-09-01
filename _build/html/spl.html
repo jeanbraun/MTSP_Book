@@ -345,7 +345,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -361,6 +363,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-equation">Basic equation</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -372,6 +382,8 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="stream-power-law">
 <span id="spl-section"></span><h1>Stream Power Law<a class="headerlink" href="#stream-power-law" title="Permalink to this heading">#</a></h1>
+<section id="basic-equation">
+<h2>Basic equation<a class="headerlink" href="#basic-equation" title="Permalink to this heading">#</a></h2>
 <p>The Stream Power Law (SPL) or Stream Power Incision Model (SPIM) <span id="id1">[<a class="reference internal" href="references.html#id3" title="Kelin X Whipple and Gregory E Tucker. Dynamics of the stream‐power river incision model: implications for height limits of mountain ranges, landscape response timescales, and research needs. Journal of Geophysical Research: Solid Earth (1978–2012), 104(B8):17661–17674, 1999. doi:10.1029/1999jb900120.">3</a>]</span> describes the competition between uplift and river incision to control the amplitude of surface topography. Mathematically it is expressed as:</p>
 <div class="math notranslate nohighlight" id="equation-spl">
 <span class="eqno">(6)<a class="headerlink" href="#equation-spl" title="Permalink to this equation">#</a></span>\[\frac{\partial h}{\partial t}=U-K_fA^mS^n\]</div>
@@ -383,6 +395,7 @@ document.write(`
 \[\Phi=\int_A\nu\ dA\]</div>
 <p>It is commonly assumed that rainfall rate is uniform over a catchment, or, more correctly, that variations in rainfall rate occur on a broader scale than that of a single catchment. In that case, the discharge is equal to the product of the drainage aerea <span class="math notranslate nohighlight">\(A\)</span> by the mean rainfall rate, <span class="math notranslate nohighlight">\(\bar\nu\)</span>, which justifies the use of catchment area as a proxy for discharge. It also implies that the rate constant <span class="math notranslate nohighlight">\(K_f\)</span> in equation <a class="reference internal" href="#equation-spl">(6)</a> contains the mean rainfall rate to the power <span class="math notranslate nohighlight">\(m\)</span>, i.e., <span class="math notranslate nohighlight">\(K_f\propto\bar\nu^m\)</span>.</p>
 </div>
+</section>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -442,6 +455,21 @@ document.write(`
             
             
               
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-equation">Basic equation</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
             
           </div>
           <footer class="bd-footer-content">
@@ -461,7 +489,7 @@ By Jean Braun
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2025.
       <br/>
     
   </p>

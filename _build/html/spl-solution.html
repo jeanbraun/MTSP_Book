@@ -345,7 +345,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -361,6 +363,17 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hack-s-law">Hack’s law</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#steady-state-equation">Steady-state equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensionless-form">Dimensionless form</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#behaviour">Behaviour</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -372,10 +385,15 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="steady-state-profile">
 <h1>Steady-state profile<a class="headerlink" href="#steady-state-profile" title="Permalink to this heading">#</a></h1>
+<section id="hack-s-law">
+<h2>Hack’s law<a class="headerlink" href="#hack-s-law" title="Permalink to this heading">#</a></h2>
 <p>The Stream Power Law - equation <a class="reference internal" href="spl.html#equation-spl">(6)</a> - requires the computation of the drainage area, <span class="math notranslate nohighlight">\(A\)</span>, at every point of the landscape. Hack’s Law <span id="id1">[<a class="reference internal" href="references.html#id22" title="John T Hack. Studies of longitudinal stream profiles in virginia and mariland. Technical Report 294-B, United Stets Government Printing Oftice, Washington, 1957.">10</a>]</span> state that drainage area varies as a power law of the distance along a stream from the source:</p>
 <div class="math notranslate nohighlight">
 \[A = k(L-x)^p\]</div>
 <p>where <span class="math notranslate nohighlight">\(x\)</span> is the distance from base level, <span class="math notranslate nohighlight">\(L\)</span> is the length of the river (from base level to the source) and <span class="math notranslate nohighlight">\(k\)</span> and <span class="math notranslate nohighlight">\(p\)</span> are two constants/parameters. The value of these parameters is relatively well constrained <span id="id2">[<a class="reference internal" href="references.html#id22" title="John T Hack. Studies of longitudinal stream profiles in virginia and mariland. Technical Report 294-B, United Stets Government Printing Oftice, Washington, 1957.">10</a>, <a class="reference internal" href="references.html#id23" title="Chuanqi He, Ci-Jian Yang, Jens M. Turowski, Richard F. Ott, Jean Braun, Hui Tang, Shadi Ghantous, Xiaoping Yuan, and Gaia Stucky de Quay. A global dataset of the shape of drainage systems. Earth System Science Data, 16(2):1151–1166, 2024. doi:10.5194/essd-16-1151-2024.">11</a>]</span>.</p>
+</section>
+<section id="steady-state-equation">
+<h2>Steady-state equation<a class="headerlink" href="#steady-state-equation" title="Permalink to this heading">#</a></h2>
 <p>We can use Hack’s Law to derive from the SPL a differential equation governing the evolution of the river profile:</p>
 <div class="math notranslate nohighlight">
 \[\frac{\partial h}{\partial t}= U -K_f\Bigr(k(L-x)^p\Bigr)^m\Bigl(\frac{\partial h}{\partial x}\Bigr)^n\]</div>
@@ -391,9 +409,15 @@ document.write(`
 <p>The total river or basin relief, <span class="math notranslate nohighlight">\(h_r\)</span>, i.e., the difference in height between base level and the source of the river, is given by <span class="math notranslate nohighlight">\(h(L)\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[h_r=h(L)=h_0L^{1-mp/n}\]</div>
+</section>
+<section id="dimensionless-form">
+<h2>Dimensionless form<a class="headerlink" href="#dimensionless-form" title="Permalink to this heading">#</a></h2>
 <p>If we normalize height by <span class="math notranslate nohighlight">\(h_r\)</span> and distance by <span class="math notranslate nohighlight">\(L\)</span>, i.e., <span class="math notranslate nohighlight">\(h'=h/h_r\)</span> and <span class="math notranslate nohighlight">\(x'=x/L\)</span>, we can write this solution in its dimensionless form:</p>
 <div class="math notranslate nohighlight">
 \[h'(x')=1-(1-x)^{1-mp/n}\]</div>
+</section>
+<section id="behaviour">
+<h2>Behaviour<a class="headerlink" href="#behaviour" title="Permalink to this heading">#</a></h2>
 <p>We can plot this function for different values of the ratio <span class="math notranslate nohighlight">\(m/n\)</span> assuming a globally averaged value for <span class="math notranslate nohighlight">\(p=1/0.54\)</span>. The results are shown in the following cells.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -433,6 +457,7 @@ document.write(`
 \[h(x)=\Bigr(\frac{U}{K_fk^m}\Bigr)^{1/n}\bigl[\log L-\log(L-x)]\]</div>
 <p>satisfying also the base level boundary condition.</p>
 </div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -490,6 +515,24 @@ document.write(`
             
             
               
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hack-s-law">Hack’s law</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#steady-state-equation">Steady-state equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensionless-form">Dimensionless form</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#behaviour">Behaviour</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
             
           </div>
           <footer class="bd-footer-content">
@@ -509,7 +552,7 @@ By Jean Braun
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2025.
       <br/>
     
   </p>

@@ -345,7 +345,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -361,6 +363,15 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensionless-equation">Dimensionless equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#behaviour">Behaviour</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -372,6 +383,8 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="steady-state-solution">
 <h1>Steady-state solution<a class="headerlink" href="#steady-state-solution" title="Permalink to this heading">#</a></h1>
+<section id="dimensionless-equation">
+<h2>Dimensionless equation<a class="headerlink" href="#dimensionless-equation" title="Permalink to this heading">#</a></h2>
 <p>The steady-state form of the heat diffusion-advection equation is obtained by setting the transient term to 0 in the dimensionless equation<a class="reference internal" href="diffusion-advection.html#equation-heat-nodim">(12)</a>:</p>
 <div class="math notranslate nohighlight">
 \[-\mathbf{Pe}\frac{\partial T'}{\partial z'}=\frac{\partial^2T'}{\partial z'^2}\]</div>
@@ -381,6 +394,9 @@ document.write(`
 <p>We can use the boundary conditions from equation <a class="reference internal" href="diffusion-advection.html#equation-heat-bc">(11)</a> to determine the values of the two arbitrary constants, <span class="math notranslate nohighlight">\(C_1\)</span> and <span class="math notranslate nohighlight">\(C_2\)</span>, to obtain:</p>
 <div class="math notranslate nohighlight">
 \[T'(z')=\frac{1-e^{-\mathbf{Pe}z'}}{1-e^{-\mathbf{Pe}}}\]</div>
+</section>
+<section id="behaviour">
+<h2>Behaviour<a class="headerlink" href="#behaviour" title="Permalink to this heading">#</a></h2>
 <p>Let’s see what this solution looks like for different values of the Péclet number, <span class="math notranslate nohighlight">\(\mathbf{Pe}\)</span>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -413,6 +429,7 @@ document.write(`
 </div>
 <p>We see that, when expressed in terms of dimensionless variables (<span class="math notranslate nohighlight">\(z'\)</span> and <span class="math notranslate nohighlight">\(T'\)</span>), the solution only depends on <span class="math notranslate nohighlight">\(\mathbf{Pe}\)</span>.</p>
 <p>Furthermore, for <span class="math notranslate nohighlight">\(\mathbf{Pe}=0\)</span>, the solution is linear or equal to the purely diffusive (conductive) equation; whereas, for large values of <span class="math notranslate nohighlight">\(\mathbf{Pe}\)</span>, the solution is made of two parts: a quasi-isothermal part from the basal boundary condition upward, and a part near the surface where the temperature decreases very rapidly. The temperature history of a particle of rock traveling through this layer at a constant velocity <span class="math notranslate nohighlight">\(u_0=\dot\epsilon\)</span> will be made of a long isothermal decompression followed by a very rapid cooling near the surface.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -470,6 +487,22 @@ document.write(`
             
             
               
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensionless-equation">Dimensionless equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#behaviour">Behaviour</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
             
           </div>
           <footer class="bd-footer-content">
@@ -489,7 +522,7 @@ By Jean Braun
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2025.
       <br/>
     
   </p>

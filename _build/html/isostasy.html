@@ -345,7 +345,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -361,6 +363,16 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-formulation">Simple formulation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mathematical-form">Mathematical form</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#potential-energy">Potential energy</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -372,11 +384,16 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="principle-of-isostasy">
 <h1>Principle of isostasy<a class="headerlink" href="#principle-of-isostasy" title="Permalink to this heading">#</a></h1>
+<section id="simple-formulation">
+<h2>Simple formulation<a class="headerlink" href="#simple-formulation" title="Permalink to this heading">#</a></h2>
 <p>The principle of <a class="reference internal" href="glossary.html#term-Isostasy"><span class="xref std std-term">isostasy</span></a> is Archimede’s principle applied to the Earth’s <a class="reference internal" href="glossary.html#term-Lithosphere"><span class="xref std std-term">lithosphere</span></a>/<a class="reference internal" href="glossary.html#term-Asthenosphere"><span class="xref std std-term">asthenosphere</span></a> system. It can be simply stated as <strong>all lithospheric columns must have the same weight</strong>. It relies on the existence of a so-called compensation depth, which corresponds to a level in the Earth’s interior that has very low viscosity (the <a class="reference internal" href="glossary.html#term-Asthenosphere"><span class="xref std std-term">asthenosphere</span></a>) and thus behaves, on geological time scales, as an inviscid fluid. Such a fluid cannot sustain any horizontal stress and therefore the weight of any column of material above it must be uniform. This compensation depth is usually taken as the base of the lithosphere, which is commonly regarded as the depth where the <a class="reference internal" href="glossary.html#term-Geotherm"><span class="xref std std-term">geotherm</span></a> is closest to the solidus and thus considered as the least viscous layer in the Earth’s upper regions.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Even though the viscosity of the asthenosphere is much lower than that of the overlying lithosphere, it remains finite. This means, for example, that the flow of asthenosphere caused by loading of an ice sheet will take several tens of thousands of years to bring the system into isostatic equilibrium. Although very large on human time scales, this time can be considered as negligible compared to the tectonic time scales of the order of millions of years. This is why one can consider, when considering tectonic processes, that isostatic adjustment is instantaneous.</p>
 </div>
+</section>
+<section id="mathematical-form">
+<h2>Mathematical form<a class="headerlink" href="#mathematical-form" title="Permalink to this heading">#</a></h2>
 <p>From the definition of the principle of isostasy, one can see that it is most useful when used to compare the topography between two lithospheric columns, for example, the difference in height between a continental interior and a mountain belt.</p>
 <p>In mathematical form, the principle of isostasy can be written as:</p>
 <div class="math notranslate nohighlight">
@@ -386,6 +403,9 @@ document.write(`
 <p class="admonition-title">Note</p>
 <p>The principle of isostasy is also a direct consequence of the quasi-static form of Newton’s second law that the sum of all forces at any point must be equal to zero.</p>
 </div>
+</section>
+<section id="potential-energy">
+<h2>Potential energy<a class="headerlink" href="#potential-energy" title="Permalink to this heading">#</a></h2>
 <p>Note that, under the quasi-static approximation, Newton’s second law also implies that the sum of all torques (or force moments) at any point must be balanced; this implies that, even if two lithospheric columns are in isostatic balance, there may exist a horizontal stress exerted by one column on the other <span id="id1">[<a class="reference internal" href="references.html#id9" title="Luce Fleitout and Claude Froidevaux. Tectonics and topography for a lithosphere containing density heterogeneities. Tectonics, 1982. doi:10.1029/tc001i001p00021.">6</a>]</span>:</p>
 <div class="math notranslate nohighlight">
 \[\bar\tau_{xx}=\frac{g}{L}\int_{z_0}^L\Delta\rho\ z\ dz\ne 0\]</div>
@@ -394,6 +414,7 @@ document.write(`
 <p class="admonition-title">Note</p>
 <p>The principle of isostasy neglects the strength of the lithosphere and the potential it has for sustaining a differential horizontal stress. To address this limitation, one commonly assumes that the lithospehre behaves as a thin elastic plate that is able to sustain some of the stress imposed by additional topography (caused by crustal thickening for example) by flexing. This leads to the concept of <a class="reference internal" href="glossary.html#term-Flexural-isostasy"><span class="xref std std-term">flexural isostasy</span></a>.</p>
 </div>
+</section>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -453,6 +474,23 @@ document.write(`
             
             
               
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-formulation">Simple formulation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mathematical-form">Mathematical form</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#potential-energy">Potential energy</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
             
           </div>
           <footer class="bd-footer-content">
@@ -472,7 +510,7 @@ By Jean Braun
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2025.
       <br/>
     
   </p>

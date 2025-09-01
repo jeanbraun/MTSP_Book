@@ -343,7 +343,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -359,6 +361,18 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ice-flow">Ice flow</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mass-conservation">Mass conservation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shallow-ice">Shallow ice</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#isosia">iSOSIA</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deep-learning">Deep learning</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -370,7 +384,12 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="ice-models">
 <h1>Ice models<a class="headerlink" href="#ice-models" title="Permalink to this heading">#</a></h1>
+<section id="ice-flow">
+<h2>Ice flow<a class="headerlink" href="#ice-flow" title="Permalink to this heading">#</a></h2>
 <p>Ice mechanical behaviour is best represented by a non-linear form of <a class="reference internal" href="stokes.html#stokes-section"><span class="std std-ref">Stokes equation</span></a>. The main difficulty in solving (or using) this equation arises from the non-linear rheological behaviour of ice that follows a power law (like rocks) with an exponent close to 3. Ice can be considered to be incompressible.</p>
+</section>
+<section id="mass-conservation">
+<h2>Mass conservation<a class="headerlink" href="#mass-conservation" title="Permalink to this heading">#</a></h2>
 <p>Solving the problem of the flow of ice on a landscape is therefore equivalent to solving Stokes equation on a highly irregular geometry (the basal boundary condition is the bedrock geometry). Note, however, that the mass conservation equation that expresses the incompressibility has been “enriched” with a source term that represents the processus of snow/ice accumulation and ablation. Indeed, the dynamics of a glacier is controlled by climate. In high altitude regions (or in the <em>accumulation zone</em>) precipitation leads to accumulation of ice on the glacier. In low altitude region (or in the <em>ablation zone</em>), melting and sublimation lead to a loss of ice. The altitude where accumulation and ablation perfectly balance eqch other is called the <em>Equilibrium Line Altitude</em> (ELA).</p>
 <figure class="align-default" id="ice-balance">
 <a class="reference internal image-reference" href="_images/ice-balance.png"><img alt="_images/ice-balance.png" src="_images/ice-balance.png" style="height: 300px;" /></a>
@@ -378,9 +397,19 @@ document.write(`
 <p><span class="caption-number">Fig. 10 </span><span class="caption-text">from <span id="id1">Siegert [<a class="reference internal" href="references.html#id19" title="Martin J Siegert. Role of glaciers and ice sheets in climate and the global water cycle. John Wiley &amp; Sons, Ltd, 2013. doi:10.1002/0470848944.hsa170.">19</a>]</span></span><a class="headerlink" href="#ice-balance" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>The shallow ice approximation <span id="id2">[<a class="reference internal" href="references.html#id16" title="Wouter H Knap, Johannes Oerlemans, and Martin Cabée. Climate sensitivity of the ice cap of king george island, south shetland islands, antarctica. Annals of Glaciology, 23:154–159, 1996. doi:10.3189/s0260305500013380.">20</a>]</span> was the most commonly used approximation to model ice flow and was incorporated in various glacial erosion models <span id="id3">[<a class="reference internal" href="references.html#id14" title="J Braun, D Zwartz, and JH Tomkin. A new surface-processes model combining glacial and fluvial erosion. Annals of Glaciology, 28:282–290, 1999. doi:10.3189/172756499781821864.">21</a>]</span>. It is similar to the <a class="reference internal" href="thinsheet.html#thin-sheet-section"><span class="std std-ref">thin-sheet</span></a> approximation. It was first developed to model ice sheets and is therefore not ideally suited to represent the flow of ice on a high relief, mountaineous topography, as it assumes that horizontal gradients in ice thickness must be small (or on a scale much larger than the ice thickness). This model cannot be used to reproduce details of glacial landscapes such as U-shaoed valleys, unless it includes a constriction factor <span id="id4">[<a class="reference internal" href="references.html#id14" title="J Braun, D Zwartz, and JH Tomkin. A new surface-processes model combining glacial and fluvial erosion. Annals of Glaciology, 28:282–290, 1999. doi:10.3189/172756499781821864.">21</a>]</span>.</p>
+</section>
+<section id="shallow-ice">
+<h2>Shallow ice<a class="headerlink" href="#shallow-ice" title="Permalink to this heading">#</a></h2>
+<p>The shallow ice approximation <span id="id2">[<a class="reference internal" href="references.html#id16" title="Wouter H Knap, Johannes Oerlemans, and Martin Cabée. Climate sensitivity of the ice cap of king george island, south shetland islands, antarctica. Annals of Glaciology, 23:154–159, 1996. doi:10.3189/s0260305500013380.">20</a>]</span> was the most commonly used approximation to model ice flow and was incorporated in various glacial erosion models <span id="id3">[<a class="reference internal" href="references.html#id14" title="Jean Braun, Daniel Zwartz, and Jonathan H Tomkin. A new surface-processes model combining glacial and fluvial erosion. Annals of Glaciology, 28:282–290, 1999. doi:10.3189/172756499781821864.">21</a>]</span>. It is similar to the <a class="reference internal" href="thinsheet.html#thin-sheet-section"><span class="std std-ref">thin-sheet</span></a> approximation. It was first developed to model ice sheets and is therefore not ideally suited to represent the flow of ice on a high relief, mountaineous topography, as it assumes that horizontal gradients in ice thickness must be small (or on a scale much larger than the ice thickness). This model cannot be used to reproduce details of glacial landscapes such as U-shaped valleys, unless it includes a constriction factor <span id="id4">[<a class="reference internal" href="references.html#id14" title="Jean Braun, Daniel Zwartz, and Jonathan H Tomkin. A new surface-processes model combining glacial and fluvial erosion. Annals of Glaciology, 28:282–290, 1999. doi:10.3189/172756499781821864.">21</a>]</span>.</p>
+</section>
+<section id="isosia">
+<h2>iSOSIA<a class="headerlink" href="#isosia" title="Permalink to this heading">#</a></h2>
 <p>A higher-order approximation (iSOSIA) has become quite popular <span id="id5">[<a class="reference internal" href="references.html#id17" title="David L Egholm, Mads F Knudsen, Chris D Clark, and Jerome E Lesemann. Modeling the flow of glaciers in steep terrains: the integrated second‐order shallow ice approximation (iSOSIA). Journal of Geophysical Research: Earth Surface (2003–2012), 2011. doi:10.1029/2010jf001900.">22</a>]</span>. It produces ice velocities that are much more realistic and in phase with the underlying complex topography, and, consequently, the erosion that it predicts through the glacial erosion law <a class="reference internal" href="glacial-erosion.html#equation-glacial">(9)</a> produces much more realistic landscape features such as U-shaped valleys, aretes and cirques. However, it is much more computationally demanding and relatively unstable such that it is not well suited to be coupled to tectonic models.</p>
+</section>
+<section id="deep-learning">
+<h2>Deep learning<a class="headerlink" href="#deep-learning" title="Permalink to this heading">#</a></h2>
 <p>More recently, the use of mahcine learning methods to solve Stokes equation have greatly sped up the computation of ice geometry <span id="id6">[<a class="reference internal" href="references.html#id18" title="Guillaume Cordonnier, Guillaume Jouvet, Adrien Peytavie, Jean Braun, Marie-Paule Cani, Bedrich Benes, Eric Galin, Eric Guérin, and James Gain. Forming terrains by glacial erosion. ACM Transactions on Graphics (TOG), 42(4):1–14, 2023. doi:10.1145/3592422.">23</a>]</span> and most of the current simulations are now performed using this new technique.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -438,6 +467,25 @@ document.write(`
             
             
               
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ice-flow">Ice flow</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mass-conservation">Mass conservation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shallow-ice">Shallow ice</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#isosia">iSOSIA</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deep-learning">Deep learning</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
             
           </div>
           <footer class="bd-footer-content">
@@ -457,7 +505,7 @@ By Jean Braun
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2025.
       <br/>
     
   </p>

@@ -19,7 +19,7 @@ Geotherm
 
 Invariant
   A scalar quantity that is constructed from the components of a tensor and that remains invariant in any system of reference.
-  
+
 Isostasy
   A physical principle that is equivalent to Archimede's principle applied to the Earth lithosphere or crust.
 

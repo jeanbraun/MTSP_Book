@@ -345,7 +345,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -361,6 +363,15 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hypotheses">Hypotheses</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combined-equation">Combined equation</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -372,6 +383,8 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="spl-in-details">
 <h1>SPL in details<a class="headerlink" href="#spl-in-details" title="Permalink to this heading">#</a></h1>
+<section id="hypotheses">
+<h2>Hypotheses<a class="headerlink" href="#hypotheses" title="Permalink to this heading">#</a></h2>
 <p>Here, inspired by <span id="id1">Whipple and Tucker [<a class="reference internal" href="references.html#id3" title="Kelin X Whipple and Gregory E Tucker. Dynamics of the stream‐power river incision model: implications for height limits of mountain ranges, landscape response timescales, and research needs. Journal of Geophysical Research: Solid Earth (1978–2012), 104(B8):17661–17674, 1999. doi:10.1029/1999jb900120.">3</a>]</span>, we provide the details of the derivation of the SPL so that the reader can appreciate the hypotheses and approximations it is based on.</p>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
@@ -381,7 +394,7 @@ Erosion rate</label><div class="sd-tab-content docutils">
 <p>Erosion rate is proportional to shear stress exerted by river flow on the bedrock to the power <span class="math notranslate nohighlight">\(a\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\dot\epsilon=k_b\tau_b^a\]</div>
-<p>Note that this shear stress definition includes the effect of tools carried by the river. It also assumed that there exists no threshold for motion/erosion. See the effect of including a threshold in <span id="id2">Deal <em>et al.</em> [<a class="reference internal" href="references.html#id4" title="E. Deal, J. Braun, and G. Botter. Understanding the role of rainfall and hydrology in determining fluvial erosion efficiency. Journal of Geophysical Research: Earth Surface, 123(4):744–778, 2018. doi:10.1002/2017jf004393.">8</a>]</span>, for example.</p>
+<p>Note that this shear stress definition includes the effect of tools carried by the river. It also assumed that there exists no threshold for motion/erosion. See the effect of including a threshold in <span id="id2">Deal <em>et al.</em> [<a class="reference internal" href="references.html#id4" title="Eric Deal, Jean Braun, and Gianluca Botter. Understanding the role of rainfall and hydrology in determining fluvial erosion efficiency. Journal of Geophysical Research: Earth Surface, 123(4):744–778, 2018. doi:10.1002/2017jf004393.">8</a>]</span>, for example.</p>
 <p>Typical value for <span class="math notranslate nohighlight">\(a\)</span> is 5/2, assuming that the dominant eroding mechanism is abrasion, or 1 for plucking (see <span id="id3">Whipple <em>et al.</em> [<a class="reference internal" href="references.html#id2" title="Kelin X. Whipple, Gregory S. Hancock, and Robert S. Anderson. River incision into bedrock: mechanics and relative efficacy of plucking, abrasion, and cavitation. GSA Bulletin, 112(3):490–503, 2000. doi:10.1130/0016-7606(2000)112&lt;490:riibma&gt;2.0.co;2.">9</a>]</span>).</p>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
@@ -419,6 +432,9 @@ Drainage area</label><div class="sd-tab-content docutils">
 <p>commonly observed value for <span class="math notranslate nohighlight">\(c\)</span> is 1.</p>
 </div>
 </div>
+</section>
+<section id="combined-equation">
+<h2>Combined equation<a class="headerlink" href="#combined-equation" title="Permalink to this heading">#</a></h2>
 <p>Combining all these relationships leads to the following expression for the erosion rate:</p>
 <div class="math notranslate nohighlight" id="equation-spl-eps">
 <span class="eqno">(7)<a class="headerlink" href="#equation-spl-eps" title="Permalink to this equation">#</a></span>\[\dot\epsilon=KA^{2ac(1-b)/3}S^{2a/3}=KA^mS^n\]</div>
@@ -427,6 +443,7 @@ Drainage area</label><div class="sd-tab-content docutils">
 \[\begin{split}m=2ac(1-b)/3\\
 n=2a/3\\
 m/n = c(1-b)\end{split}\]</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -484,6 +501,22 @@ m/n = c(1-b)\end{split}\]</div>
             
             
               
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hypotheses">Hypotheses</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combined-equation">Combined equation</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
             
           </div>
           <footer class="bd-footer-content">
@@ -503,7 +536,7 @@ By Jean Braun
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2025.
       <br/>
     
   </p>

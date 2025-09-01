@@ -1,6 +1,8 @@
 (spl-section)=
 # Stream Power Law
 
+## Basic equation
+
 The Stream Power Law (SPL) or Stream Power Incision Model (SPIM) {cite:p}`Whipple1999JournalofGeophysicalResearchSolidEarth19782012` describes the competition between uplift and river incision to control the amplitude of surface topography. Mathematically it is expressed as:
 ```{math}
 :label: spl

@@ -1,6 +1,8 @@
 (stokes-section)=
 # Stokes flow
 
+## Basic equation
+
 Stokes equation is a simplified form of Navier-Stokes equation that assumes that one can neglect inertial forces (and thus turbulence). It takes the following form:
 
 ```{math}
@@ -14,6 +16,8 @@ where $\tau_{ij}$ are the compnents of the stress tensor, $p$ the pressure, $\rh
 A Stoke fluid is, by definition, devoid of inertia which implies that if the driving force stops, the fluid motion stops instantaneously. Honey behaves like a Stoke fluid: if you stir a honey jar with a spoon, once you remove the spoon, the honey stops moving instantly. This behaviour is also observed in the Earth on geological time scales: it explains why hot spot chains (like the [Hawaiian-Emperor seamont chain](https://www.usgs.gov/media/images/hawaiian-emperor-seamount-chain)) display very abrupt strike changes that correspond to "instantaneous" changes in plate velocities.
 ```
 
+## Balance of forces
+
 Equation {eq}`stokes-force` represents the balance between three forces that must exist at any point within the fluid:
 1. the first term (on the left-hand side of the equation) represents the viscous forces
 2. the second term (on the right-hand side of the equation) represents the forces arising from pressure gradient inside the fluid;
@@ -25,12 +29,16 @@ Note that this equation does not contain any time dependency. In other words, th
 Stokes flow have interesting properties. One of them is that they are perfectly reversible. This can be appreciated on the [following video](https://www.youtube.com/watch?v=rA6T83FKuE8)
 ```
 
+## Incompressibility
+
 If we wish to use Stokes equation to represent the motion and deformation of plates and flow in the underlying mantle, we must also assume that the flow is incompressible. Mathematically, this is equivalent to assuming that, at every point within the fluid, the divergence of the velocity vector is nil. In other words:
 ```{math}
 :label: incompressibility
 \frac{\partial u_i}{\partial x_i}=0
 ```
 where $u_i$ are the components of the velocity vector. Note that in this equation as in equation {eq}`stokes-force`, we have used [Einstein's notation](https://en.wikipedia.org/wiki/Einstein_notation) which assumes that if an index appears more than once in a single term and is not otherwise defined, it implies summation.
+
+## Rheology
 
 We see that the first equation {eq}`stokes-force` refers to stresses (or forces), whereas the second {eq}`incompressibility` referes to velocities. To combine the two equations, one needs to introduce a rheological law or {term}`rheology`, i.e., a rule that defines the relationship between deformation (velocity) and stress (force). Here we assume a non-linear viscous behaviour of the form:
 ```{math}

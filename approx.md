@@ -1,5 +1,7 @@
 # Thin sheet approximation
 
+## Basic assumptions
+
 The thin sheet approximation is an application of Stokes equation to the behaviour of a thin viscous sheet. It implies:
 1. that vertical columns in the sheet cannot be sheared
 2. that all variables and properties can be approximated by their vertically averaged values
@@ -9,6 +11,8 @@ This can be expressed mathematically as:
 \dot\epsilon_{13}=\dot\epsilon_{31}=\dot\epsilon_{23}=\dot\epsilon_{32}=0
 ```
 where the 3rd index corresponds to the vertical component, and by integrating Stokes equation along the vertical dimension.
+
+## Thin sheet equation
 
 Using also the incompressibility condition - equation{eq}`incompressibility` -  that can be expressed in terms of the strain rate components:
 ```{math}
@@ -23,6 +27,8 @@ where $\bar p$ is the vertically averaged pressure:
 \bar p=\frac{1}{L}\int_0^L p\ dz=\frac{g\rho_ch^2}{2L}(1-\rho_c/\rho_m)+\frac{g\rho_mL}{2}
 ```
 $L$ and $h$ are the lithospheric and crustal thicknesses, respectively, $\rho_c$ and $\rho_m$ the crustal and mantle densities and $\dot E$ is the second {term}`invariant` of the strain rate tensor.
+
+## Interpretation
 
 Combining the last two equations yields:
 ```{math}

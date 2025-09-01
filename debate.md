@@ -11,7 +11,7 @@ At this point you must have a clearer picture on how the four papers you have re
 Are they obvious contradictions between the four papers? To answer this question, analyze the papers by pairs and see if their main conclusions are compatible?
 ```
 
-```{tab-items} Hypotheses
+```{tab-item} Hypotheses
 Can these contradictions be explained by differences in hypotheses made by the authors? Are they all justified? Are some hypotheses better than others? Are there some that are better adapted to given circumstances or environments?
 ```
 

@@ -1,5 +1,7 @@
 # Diffusion-advection equation
 
+## Basic equation
+
 The partial differential equation (PDE) governing the one-dimensional, transient transport of heat by diffusion (conduction) and advection is:
 ```{math}
 :label: heat
@@ -11,11 +13,14 @@ where $T$ is temperature, $u_0$ the velocity at which the material moves with re
 Note that because we are interested in erosion, the velocity of rocks towards the surface is in the opposite direction to that of increasing depth, $z$. This is the reason why the advection term is negative.
 ```
 
+## Boundary conditions
+
 To this PDE, one must associate two boundary conditions, one at the surface ($z=0$) and one at a depth $L$ that corresponds to the thickness of the layer being eroded towards the surface:
 ```{math}
 :label: heat-bc
 T(z=0)=0 \textrm{ and }T(z=L)=T_L
 ```
+
 In this particular case, it is assumed that the temperature is fixed at $L$, but one could use a constant heat flux boundary condition that would impose a value on the temperature gradient, $dT/dz$, rather than the temperature.
 
 Because it is a transient (evolution) equation, one also needs to impose an initial condition, i.e., a temperature distribution with depth at a reference time ($t=0$ in our case).
@@ -25,11 +30,15 @@ T(t=0)=T_0(z)
 
 The need for boundary and initial conditions arise from the fact that the equation is a *differential* equation meaning that it only informs us on the rate of change (in space or time) of the solution, not on its absolute value. There is therefore a need to *fix* the solution in space and time (or give some reference values for the solution) so that an obsolute value can be derived from the equation.
 
+## Dimensionless variables
+
 To define dimensionless numbers, one needs to introduce dimensionless variables. To do so we use the initial and boundary conditions:
 ```{math}
 z'=z/L,\ T'=T/T_L,\ t'=t/\tau
 ```
 Note that we have introduced an arbitrary time scale, $\tau$. We will see later how it can be defined.
+
+## Dimensionless equation
 
 If we introduce these dimensionless variables in the equation, we obtain the dimensionless form of the equation:
 ```{math}
@@ -56,6 +65,8 @@ which leads to the following dimensionless form of the equation:
 :label: heat-nodim
 \frac{\partial T'}{\partial t'}-\mathbf{Pe}\frac{\partial T'}{\partial z'}=\frac{\partial^2T'}{\partial z'^2}
 ```
+
+## Péclet number
 
 Note that the Péclet number can also be regarded as the ratio of two time scales:
 ```{math}
