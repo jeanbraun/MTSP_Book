@@ -2,7 +2,7 @@
 
 ## Motivation
 
-This reading course addresses the question of what controls the height of Mountain belts. Is it the strength of the {term}`lithosphere` compared to the weight of the topography, the efficiency of erosion (and thus a function of climate) or the rate at which plates move at the Earth's surface.
+This reading course addresses the question of what controls the height of mountain belts. Is it the strength of the {term}`lithosphere` compared to the weight of the topography, the efficiency of erosion (and thus a function of climate) or the rate at which plates move at the Earth's surface.
 
 ## Earth's topography
 
