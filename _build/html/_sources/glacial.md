@@ -28,7 +28,7 @@ The Aletsch glacier in Switzerland showing the flow of ice and its effect on the
 
 ## Chicken and egg debate
 
-There is an on-going debate {cite:p}`Molnar1990,Herman2013Nature,Schildgen2018Nature` on whether the cooling of the Quaternary and the apparition of glaciers in mountain belts has enhanced the "erosional efficiency" of the Earth's hydrosphere, which in turn, could have caused an uplift of mountain belt by flexural {term}`isostasy`. This debate highlights the need to better understand and quantify the efficiency of glacial erosion and how it compares to that of fluvial erosion. This is one of the reasons why many models of glacial erosion have been developed in recent years. They differ mostly by the way they solve the equation governing the distribution of ice on a landscape.
+There is an on-going debate {cite:p}`Molnar1990,Herman2013Nature,Schildgen2018Nature` on whether the cooling of the Quaternary and the apparition of glaciers in mountain belts has enhanced the "erosional efficiency" of the Earth's hydrosphere, which in turn, could have caused an uplift of mountain belt by flexural {term}`isostasy <isostasy>`. This debate highlights the need to better understand and quantify the efficiency of glacial erosion and how it compares to that of fluvial erosion. This is one of the reasons why many models of glacial erosion have been developed in recent years. They differ mostly by the way they solve the equation governing the distribution of ice on a landscape.
 
 ## Glacial erosion law
 

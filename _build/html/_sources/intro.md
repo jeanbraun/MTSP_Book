@@ -2,7 +2,7 @@
 
 ## Motivation
 
-This reading course addresses the question of what controls the height of mountain belts. Is it the strength of the {term}`lithosphere` compared to the weight of the topography, the efficiency of erosion (and thus a function of climate) or the rate at which plates move at the Earth's surface.
+This reading course addresses the question of what controls the height of mountain belts. Is it the strength of the {term}`lithosphere <lithosphere>` compared to the weight of the topography, the efficiency of erosion (and thus a function of climate) or the rate at which plates move at the Earth's surface.
 
 ## Earth's topography
 
@@ -47,7 +47,7 @@ Earth's surface topography
 
 ## Dynamic vs tectonic topography
 
-We like to classify topography in two categories: the topography that is related to variations in crustal thickness through the principle of {term}`isostasy` and the topography that is not correlated to variations in crustal thickness and is thus considered to be caused not by tectonic plate interactions (collision or extension) but by flow in the underlying convective mantle. This later type of topography is usual termed {term}`dynamic topography`, in contrast to the former called isostatic or tectonic topography.
+We like to classify topography in two categories: the topography that is related to variations in crustal thickness through the principle of {term}`isostasy <isostasy>` and the topography that is not correlated to variations in crustal thickness and is thus considered to be caused not by tectonic plate interactions (collision or extension) but by flow in the underlying convective mantle. This later type of topography is usual termed {term}`dynamic topography <dynamic topography>`, in contrast to the former called isostatic or tectonic topography.
 
 ```{figure} images/dynamictopo.png
 ---
@@ -113,7 +113,7 @@ Glacial buzzsaw
 :::
 ::::
 
-In the context of this course, I have selected four papers that use numerical modeling as the main tool to support or develop their hypothesis. Furthermore, most papers quantify their hypothesis by introducing and assessing the value of a {term}`dimensionless number`.
+In the context of this course, I have selected four papers that use numerical modeling as the main tool to support or develop their hypothesis. Furthermore, most papers quantify their hypothesis by introducing and assessing the value of a {term}`dimensionless number <dimensionless number>`.
 
 ## Objectives
 

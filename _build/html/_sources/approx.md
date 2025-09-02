@@ -26,7 +26,7 @@ where $\bar p$ is the vertically averaged pressure:
 ```{math}
 \bar p=\frac{1}{L}\int_0^L p\ dz=\frac{g\rho_ch^2}{2L}(1-\rho_c/\rho_m)+\frac{g\rho_mL}{2}
 ```
-$L$ and $h$ are the lithospheric and crustal thicknesses, respectively, $\rho_c$ and $\rho_m$ the crustal and mantle densities and $\dot E$ is the second {term}`invariant` of the strain rate tensor.
+$L$ and $h$ are the lithospheric and crustal thicknesses, respectively, $\rho_c$ and $\rho_m$ the crustal and mantle densities and $\dot E$ is the second {term}`invariant<invariant>` of the strain rate tensor.
 
 ## Interpretation
 

@@ -44,7 +44,7 @@ Commonly observed value for $b$ is 1/2.
 
 ````{tab-item} Drainage area
 ##### Hypothesis
-Discharge is proportional to drainage area:
+Discharge is proportional to {term}`drainage area<drainage area>`:
 ```{math}
 Q = k_qA^c
 ```

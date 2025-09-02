@@ -40,7 +40,7 @@ where $u_i$ are the components of the velocity vector. Note that in this equatio
 
 ## Rheology
 
-We see that the first equation {eq}`stokes-force` refers to stresses (or forces), whereas the second {eq}`incompressibility` referes to velocities. To combine the two equations, one needs to introduce a rheological law or {term}`rheology`, i.e., a rule that defines the relationship between deformation (velocity) and stress (force). Here we assume a non-linear viscous behaviour of the form:
+We see that the first equation {eq}`stokes-force` refers to stresses (or forces), whereas the second {eq}`incompressibility` referes to velocities. To combine the two equations, one needs to introduce a rheological law or {term}`rheology<rheology>`, i.e., a rule that defines the relationship between deformation (velocity) and stress (force). Here we assume a non-linear viscous behaviour of the form:
 ```{math}
 :label: rheology
 \dot\epsilon_{ij} = B^{-n}T^{n-1}\sigma_{ij}
@@ -50,7 +50,7 @@ where $\dot\epsilon_{ij}$ is the strain rate tensor, defined from the spatial de
 :label: strain-rate
 \dot\epsilon_{ij}=\frac{1}{2}\Bigl(\frac{\partial u_i}{\partial x_j}+\frac{\partial u_j}{\partial x_i}\Bigr)
 ```
-$B$ is a constant and $n$ an exponent that represents the non-linearity of the rheological law (the rheology is linear is $n=1$). Using values of $n>1$ implies that the material is strain softening, i.e., its viscosity drops as the strain rate increases. $T$ is the second {term}`invariant` of the deviatoric part of the stress tensor. The deviatoric part means that the pressure has been substracted from the diagonal elements of the stress tensor. The second invariant is a special combination of the tensor components that remains invariant in any system of reference (the pressure is the first invariant of the stress tensor). More information on the invariants of a tensor can be found [here](https://en.wikipedia.org/wiki/Invariants_of_tensors).
+$B$ is a constant and $n$ an exponent that represents the non-linearity of the rheological law (the rheology is linear is $n=1$). Using values of $n>1$ implies that the material is strain softening, i.e., its viscosity drops as the strain rate increases. $T$ is the second {term}`invariant<invariant>` of the deviatoric part of the stress tensor. The deviatoric part means that the pressure has been substracted from the diagonal elements of the stress tensor. The second invariant is a special combination of the tensor components that remains invariant in any system of reference (the pressure is the first invariant of the stress tensor). More information on the invariants of a tensor can be found [here](https://en.wikipedia.org/wiki/Invariants_of_tensors).
 
 ````{note}
 Note that the viscosity of rocks is also a strong (exponential) function of temperature. This is because the temperature inside the Earth varies from 0 near the surface to several thousands of degree in its deep interior.

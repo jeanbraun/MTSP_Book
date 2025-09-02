@@ -8,7 +8,7 @@ height: 800px
 name: wolf-etal-firstpage
 ---
 ```
-This hypothesis is derived from the results obtained by coupling a sophisticated thermo-mechanical model of the {term}`lithosphere` and underlying mantle solving the [Stokes equation](stokes-section), to a landscape evolution model solving the [Stream Power Law](spl-section) (SPL). The results are interpreted by introducing a dimensionless number, the Beaumont number, $\mathbf{Bm}$.
+This hypothesis is derived from the results obtained by coupling a sophisticated thermo-mechanical model of the {term}`lithosphere <lithosphere>` and underlying mantle solving the [Stokes equation](stokes-section), to a landscape evolution model solving the [Stream Power Law](spl-section) (SPL). The results are interpreted by introducing a dimensionless number, the Beaumont number, $\mathbf{Bm}$.
 
 `````{admonition} To help you in your reading, here are a few hints
 :class: tip
